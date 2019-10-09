@@ -1,0 +1,86 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Vue 风格指南 · 前端技术文档库</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="这里是官方的 Vue 特有代码的风格指南。如果在工程中使用 Vue，为了回避错误、小纠结和反模式，该指南是份不错的参考。不过我们也不确信风格指南的所有内容对于所有的团队或工程都是理想的。所以根据过去的经验、周围的技术栈、个人价值观做出有意义的偏差是可取的。"/><meta name="docsearch:version" content="1.0.2"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Vue 风格指南 · 前端技术文档库"/><meta property="og:type" content="website"/><meta property="og:url" content="https://leesren.github.io/docusaurus-fexindex"/><meta property="og:description" content="这里是官方的 Vue 特有代码的风格指南。如果在工程中使用 Vue，为了回避错误、小纠结和反模式，该指南是份不错的参考。不过我们也不确信风格指南的所有内容对于所有的团队或工程都是理想的。所以根据过去的经验、周围的技术栈、个人价值观做出有意义的偏差是可取的。"/><meta property="og:image" content="https://leesren.github.io/docusaurus-fex/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://leesren.github.io/docusaurus-fex/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/docusaurus-feximg/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://leesren.github.io/docusaurus-fex/blog/atom.xml" title="前端技术文档库 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://leesren.github.io/docusaurus-fex/blog/feed.xml" title="前端技术文档库 Blog RSS Feed"/><script type="text/javascript" src="/js/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/js/code-blocks-buttons.js"></script><script src="/docusaurus-fexjs/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-fexcss/prism.css"/><link rel="stylesheet" href="/docusaurus-fexcss/main.css"/><script src="/docusaurus-fexjs/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-fex"><img class="logo" src="/docusaurus-feximg/favicon.ico" alt="前端技术文档库"/><h2 class="headerTitleWithLogo">前端技术文档库</h2></a><a href="/docusaurus-fexversions"><h3>1.0.2</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class="siteNavGroupActive"><a href="/docusaurus-fexdocs/start" target="_self">快速开始</a></li><li class=""><a href="/docusaurus-fexdocs/doc4" target="_self">API</a></li><li class=""><a href="/docusaurus-fexhelp" target="_self">Help</a></li><li class=""><a href="/docusaurus-fexblog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>扩展阅读</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">关于规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/start">快速上手</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/restructure-frontend-rules-choice">重构答疑</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/restructure-frontend-shape-screen">游戏内异形屏适配规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/restructure-frontend-rules-html">HTML 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/restructure-frontend-rules-css">CSS 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/restructure-frontend-rules-js">Javascript 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/restructure-frontend-rules-vue">Vue.js 组件编码规范</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">页面规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide">页面规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-header">页面头部</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-css">CSS 规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-name">注释与命名</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-dir">文件目录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-img">图片处理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-sta">数据统计</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----PC端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-pc-compatible">浏览器兼容</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-pc-share">页面分享</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----移动端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-mobile-design">移动端页面设计规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-mobile-font">移动端页面字体使用参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-mobile-rem">rem 布局</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-mobile-compatible">移动端页面兼容要求</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/page-guide-mobile-media">移动端 H5 页面音频/视频规范</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">工具/系统<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/tools">常用工具/参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/cdn">常用 JS 库 CDN</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/img-press">图片压缩工具</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">特殊规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/spec-concheck">页面内容检查</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/spec-version">版本管理</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">扩展阅读<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/reading-more">拓展阅读</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/safe">WEB 前端页面安全指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/performance">移动端页面性能优化指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/viewport">视口（viewport）基础知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/mobile-response">移动端页面适配知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/mobile-event">移动端事件介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/style-guide-airbnb-js">Airbnb JavaScript 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/style-guide-react">React 风格指南</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-fexdocs/style-guide-vue2">Vue 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/style-guide-angular">Angular - 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/style-guide-ts">TypeScript</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/style-guide-You-Dont-Know-JS">你不懂 JS（系列丛书）【中文】</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/style-guide-cache">缓存</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/style-guide-chrome-devtools">Chrome 开发者工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/style-guide-input">输入框问题</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/style-guide-error">错误监控</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端导航<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fexdocs/fe-nav">前端导航</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Vue 风格指南</h1></header><article><div><span><p>这里是官方的 Vue 特有代码的风格指南。如果在工程中使用 Vue，为了回避错误、小纠结和反模式，该指南是份不错的参考。不过我们也不确信风格指南的所有内容对于所有的团队或工程都是理想的。所以根据过去的经验、周围的技术栈、个人价值观做出有意义的偏差是可取的。</p>
+<p>对于其绝大部分，我们也总体上避免就 <code>JavaScript</code> 或 <code>HTML</code> 的本身提出建议。我们不介意你是否使用分号或结尾的逗号。我们不介意你在 <code>HTML</code> 特性中使用单引号还是双引号。不过当我们发现在 Vue 的情景下有帮助的特定模式时，也会存在例外。</p>
+<blockquote>
+<p>不久之后，我们还会提供操作层面的技巧。有的时候你只需要遵守规则，而我们会尽可能向你展示如何使用 <code>ESLint</code> 及其它自动化程序把操作层面弄得更简单。</p>
+</blockquote>
+<p>最终，我们把所有的规则归为了四个大类：</p>
+<ul>
+<li><strong><a href="https://cn.vuejs.org/v2/style-guide/">查看更多</a></strong></li>
+<li><strong><a href="https://cn.vuejs.org/">官网【中文】</a></strong></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-fexdocs/style-guide-react"><span class="arrow-prev">← </span><span>React 风格指南</span></a><a class="docs-next button" href="/docusaurus-fexdocs/style-guide-angular"><span>Angular - 风格指南</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-fex" class="nav-home"><img src="/docusaurus-feximg/logo.png" alt="前端技术文档库" width="48" height="48" style="max-width:initial"/></a><div><h5>Docs</h5><a href="/docusaurus-fexdocs/en/start.html">快速开始</a><a href="/docusaurus-fexdocs/en/page-guide.html">查看规范</a><a href="/docusaurus-fexdocs/en/reading-more.html">拓展阅读</a></div><div><h5>Community</h5><a href="/docusaurus-fexen/users.html">User Showcase</a></div><div><h5>More</h5><a href="/docusaurus-fexblog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docusaurus-feximg/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/><section class="copyright">Copyright © 2019 友点科技</section></a></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '3eb9507824b8be89e7a199ecaa1a9d2c',
+                indexName: 'docusaurus',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {"facetFilters":["language:en","version:1.0.2"]}
+              });
+            </script></body></html>
