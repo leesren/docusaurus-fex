@@ -54,7 +54,7 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Javascript 编码规范</h1></header><article><div><span><ul>
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Javascript 编码规范</h1></header><article><div><span><ul>
 <li><p>使用 UTF-8 编码来保存文件。</p></li>
 <li><p>总是使用 var 声明变量， 变量命名规范使用驼峰式（variableNamesLikeThis）,当命名构造函数或类时使用驼峰式的大写，有意义的变量名，多个变量声明用逗号隔开，将变量声明放在当前环境作用域开始的地方(function 的最上面)，比如：</p></li>
 </ul>
@@ -91,7 +91,7 @@
 <li><p>每个表达式语句后面加分号。</p></li>
 <li><p>优先使用单引号(‘)于双引号(“)，因为字符串可能包含 HTML 代码, 比如：</p></li>
 </ul>
-<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> test = ‘&lt;span <span class="hljs-class"><span class="hljs-keyword">class</span></span>=”example”&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>’;
+<pre><code class="hljs css language-js">var test = ‘&lt;span class=”example”&gt;&lt;/span&gt;’;
 </code></pre>
 <ul>
 <li>操作符两端添加空格</li>
@@ -113,7 +113,7 @@
 </ul>
 <pre><code class="hljs css language-js"><span class="hljs-comment">/**
  * foo函数描述
- * @type {number} 类型
+ * <span class="hljs-doctag">@type <span class="hljs-type">{number}</span> </span>类型
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">type</span>) </span>{
   <span class="hljs-comment">//do some thing</span>
@@ -193,7 +193,7 @@ SubType.prototype.sayAge = <span class="hljs-function"><span class="hljs-keyword
 <li><code>&quot;use strict&quot;</code> (ECMAscript 5 声明)在函数内使用，放在函数的第一行，使得 Javascript 在更严格的条件下运行， 增加运行速度。</li>
 </ul>
 <pre><code class="hljs css language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{
-<span class="hljs-meta">  'use strict'</span>;
+  <span class="hljs-string">'use strict'</span>;
   a = <span class="hljs-number">123</span>; <span class="hljs-comment">//严格模式下直接报错 a 未声明</span>
 }
 </code></pre>
@@ -246,7 +246,7 @@ $(‘ul’).on(‘click’, ‘li’ <span class="hljs-function"><span class="hl
 <li><p>访问 <a href="http://developers.google.com/speed/pagespeed/insights/">Google PageSpeed</a></p></li>
 <li><p><a href="https://www.webpagetest.org/">webpagestest</a></p></li>
 </ul>
-</span></div></article></div><div class="docLastUpdate"><em>Last updated on 10/9/2019 by 岑少任</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-fex/docs/1.0.3/restructure-frontend-rules-css"><span class="arrow-prev">← </span><span>CSS 编码规范</span></a><a class="docs-next button" href="/docusaurus-fex/docs/1.0.3/restructure-frontend-rules-vue"><span>Vue.js 组件编码规范</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#开发性能规范">开发性能规范</a></li><li><a href="#性能测试网站">性能测试网站</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-fex/" class="nav-home"><img src="/docusaurus-fex/img/logo.png" alt="前端技术文档库" width="48" height="48" style="max-width:initial"/></a><div><h5>Docs</h5><a href="/docusaurus-fex/docs/en/start.html">快速开始</a><a href="/docusaurus-fex/docs/en/page-guide.html">查看规范</a><a href="/docusaurus-fex/docs/en/reading-more.html">拓展阅读</a></div><div><h5>Community</h5><a href="/docusaurus-fex/en/users.html">User Showcase</a><a href="/docusaurus-fex/en/business.html">business</a></div><div><h5>More</h5><a href="/docusaurus-fex/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docusaurus-fex/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/><section class="copyright">Copyright © 2019 友点科技</section></a></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-10-9 by 岑少任</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-fex/docs/1.0.3/restructure-frontend-rules-css"><span class="arrow-prev">← </span><span>CSS 编码规范</span></a><a class="docs-next button" href="/docusaurus-fex/docs/1.0.3/restructure-frontend-rules-vue"><span>Vue.js 组件编码规范</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#开发性能规范">开发性能规范</a></li><li><a href="#性能测试网站">性能测试网站</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-fex/" class="nav-home"><img src="/docusaurus-fex/img/logo.png" alt="前端技术文档库" width="48" height="48" style="max-width:initial"/></a><div><h5>Docs</h5><a href="/docusaurus-fex/docs/en/start.html">快速开始</a><a href="/docusaurus-fex/docs/en/page-guide.html">查看规范</a><a href="/docusaurus-fex/docs/en/reading-more.html">拓展阅读</a></div><div><h5>Community</h5><a href="/docusaurus-fex/en/users.html">User Showcase</a><a href="/docusaurus-fex/en/business.html">business</a></div><div><h5>More</h5><a href="/docusaurus-fex/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docusaurus-fex/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/><section class="copyright">Copyright © 2020 友点科技</section></a></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
                 document.addEventListener('keyup', function(e) {
                   if (e.target !== document.body) {
                     return;

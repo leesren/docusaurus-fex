@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>数据统计 · 前端技术文档库</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="页面需要使用 **PTT 统计代码组件**`ping_tcss_tgideas_https_min.js`进行数据上报。"/><meta name="docsearch:version" content="1.0.4"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="数据统计 · 前端技术文档库"/><meta property="og:type" content="website"/><meta property="og:url" content="https://leesren.github.io/docusaurus-fex/"/><meta property="og:description" content="页面需要使用 **PTT 统计代码组件**`ping_tcss_tgideas_https_min.js`进行数据上报。"/><meta property="og:image" content="https://leesren.github.io/docusaurus-fex/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/docusaurus-fex/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://leesren.github.io/docusaurus-fex/blog/atom.xml" title="前端技术文档库 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://leesren.github.io/docusaurus-fex/blog/feed.xml" title="前端技术文档库 Blog RSS Feed"/><script type="text/javascript" src="/docusaurus-fex//js/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/docusaurus-fex//js/code-blocks-buttons.js"></script><script src="/docusaurus-fex/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-fex/css/prism.css"/><link rel="stylesheet" href="/docusaurus-fex/css/main.css"/><script src="/docusaurus-fex/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-fex/"><img class="logo" src="/docusaurus-fex/img/favicon.ico" alt="前端技术文档库"/><h2 class="headerTitleWithLogo">前端技术文档库</h2></a><a href="/docusaurus-fex/versions"><h3>1.0.4</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class="siteNavGroupActive"><a href="/docusaurus-fex/docs/1.0.4/start" target="_self">快速开始</a></li><li class=""><a href="/docusaurus-fex/docs/1.0.4/doc4" target="_self">API</a></li><li class=""><a href="/docusaurus-fex/help" target="_self">Help</a></li><li class=""><a href="/docusaurus-fex/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>页面规范</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">关于规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/start">快速上手</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/restructure-frontend-rules-choice">重构答疑</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/restructure-frontend-shape-screen">游戏内异形屏适配规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/restructure-frontend-rules-html">HTML 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/restructure-frontend-rules-css">CSS 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/restructure-frontend-rules-js">Javascript 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/restructure-frontend-rules-vue">Vue.js 组件编码规范</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">页面规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide">页面规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-header">页面头部</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-css">CSS 规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-name">注释与命名</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-dir">文件目录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-img">图片处理</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-sta">数据统计</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----PC端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-pc-compatible">浏览器兼容</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-pc-share">页面分享</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----移动端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-mobile-design">移动端页面设计规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-mobile-font">移动端页面字体使用参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-mobile-rem">rem 布局</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-mobile-compatible">移动端页面兼容要求</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/page-guide-mobile-media">移动端 H5 页面音频/视频规范</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">工具/系统<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/tools">常用工具/参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/cdn">常用 JS 库 CDN</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/img-press">图片压缩工具</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">特殊规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/spec-concheck">页面内容检查</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/spec-version">版本管理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/code-review">代码健壮</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">扩展阅读<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/reading-more">拓展阅读</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/safe">WEB 前端页面安全指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/performance">移动端页面性能优化指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/viewport">视口（viewport）基础知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/mobile-response">移动端页面适配知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/mobile-event">移动端事件介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/style-guide-airbnb-js">Airbnb JavaScript 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/style-guide-react">React 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/style-guide-vue2">Vue 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/style-guide-angular">Angular - 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/style-guide-ts">TypeScript</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/style-guide-You-Dont-Know-JS">你不懂 JS（系列丛书）【中文】</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/style-guide-cache">缓存</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/style-guide-chrome-devtools">Chrome 开发者工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/style-guide-input">输入框问题</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/style-guide-error">错误监控</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端导航<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/fe-nav">前端导航</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">业务<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/business/fs">Node fs 模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/business/exception">自定义 Exception</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/business/enums">枚举类型 enums</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/business/nodejs">Node 常用扩展模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/business/nodejs2">Node 常用扩展模块 2</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/business/utils">常用工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/business/ArrayBuffer">ArrayBuffer 工具类</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/business/http">Http 相关</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.4/business/validators">validators 表单验证</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">数据统计</h1></header><article><div><span><p>页面需要使用 <strong>PTT 统计代码组件</strong><code>ping_tcss_tgideas_https_min.js</code>进行数据上报。</p>
+<p>如没有正确执行上报，少加、漏加、错加代码将导致页面统计不到任何数据，后果很严重。</p>
+<p>页面重构完成后请仔细检查，并且详细阅读以下说明。</p>
+<h2><a class="anchor" aria-hidden="true" id="页面-pv-统计代码"></a><a href="#页面-pv-统计代码" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>页面 PV 统计代码</h2>
+<p>需要在页面底部添加 <code>PTT 统计代码</code>，如果是官网记得 <code>siteType</code> 属性填写为 <code>os</code></p>
+<blockquote>
+<p>PTT 的主函数 pgvMain() 请不要延迟执行，建议直接调用，或者最迟在 document.DOMContentLoaded(即通常理解的 domReady) 事件内调用。晚于此时间点上报统计请求，有<code>统计数据丢失</code>的风险，也会触发<code>网页质量工单</code>。</p>
+</blockquote>
+<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+  <span class="hljs-comment">//此段代码不能放到外链JS中，</span>
+  <span class="hljs-keyword">var</span> setSite = {
+    <span class="hljs-comment">//设置网站属性</span>
+    siteType: <span class="hljs-string">'a20160711xxx'</span>, <span class="hljs-comment">//必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx</span>
+    pageType: <span class="hljs-string">'index'</span>, <span class="hljs-comment">//必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN,不支持点(.)、下划线(_)</span>
+    pageName: <span class="hljs-string">'首页'</span>, <span class="hljs-comment">//必填项:页面中文名</span>
+    project: <span class="hljs-string">'other'</span>, <span class="hljs-comment">//选填项:如果是官网模块则是必填;按照模块内容，填写固定的对应值;官网微社区base;同人站doujin;赛事match;故事站story;文化站history;粉丝站fans;爆料站coming;论坛bbs;皮肤skin;默认other;</span>
+    osact: <span class="hljs-number">0</span> <span class="hljs-comment">//选填项:默认是0。osact=0表示非官网专题；osact=pc表示pc官网/pc官网专题；osact=m表示移动官网/移动官网专题；osact=ingame表示微社区/微社区专题</span>
+  };
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> pgvMain == <span class="hljs-string">'function'</span>) pgvMain(); <span class="hljs-comment">//千万不能忘记！</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>siteType 要么填写 os 要么填写文件夹名称，不要直接复制照搬，必须全小写。
+PTT 所有埋点如有多个单词拼接，请使用英文中横线(-)，禁止所有其他写法例如点(.)、下划线(<code>_</code>)、英文逗号(,)、驼峰式(大小写)等，包括但不限于 siteType、pageType、pageName、PTTSendClick、exposure。</p>
+</blockquote>
+<p>一般只需要改的是前三项 siteType、pageType、pageName，其中 pageType 和 pageName 可以自定义，可参考上面代码中的注释。</p>
+<blockquote>
+<p>不要忘了在加载完 PTT 组件后，执行 <code>if(typeof(pgvMain)=='function')pgvMain();</code></p>
+</blockquote>
+<p>如果使用 PTT 上报方式，以下组件由于 PTT 上报已经集成故不能使用，会冲突：</p>
+<ul>
+<li>js/comm/stayTime.min.js 停留时间统计组件</li>
+<li>js/comm/pagecount.min.js 停留时间统计组件</li>
+<li>js/comm/exposure.min.js 触达率/曝光次数统计组件</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="关于-setsiteproject"></a><a href="#关于-setsiteproject" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>关于 setSite.project</h2>
+<p>选填，目的是区分官网类型，在官网体系内是必填项。</p>
+<p>例如隶属于官网体系的赛事中心，会有自己的主页、资讯列表页详情页等，这个时候需要细化官网体系，就需要 project 区分；</p>
+<p><strong>按照模块内容，填写固定的对应值；</strong></p>
+<table>
+<thead>
+<tr><th>站点类型</th><th style="text-align:center">project 值</th></tr>
+</thead>
+<tbody>
+<tr><td>原生官网</td><td style="text-align:center">base</td></tr>
+<tr><td>微社区</td><td style="text-align:center">ingame</td></tr>
+<tr><td>同人站</td><td style="text-align:center">doujin</td></tr>
+<tr><td>赛事</td><td style="text-align:center">match</td></tr>
+<tr><td>故事站</td><td style="text-align:center">story</td></tr>
+<tr><td>文化站</td><td style="text-align:center">history</td></tr>
+<tr><td>粉丝站</td><td style="text-align:center">fans</td></tr>
+<tr><td>爆料站</td><td style="text-align:center">coming</td></tr>
+<tr><td>论坛</td><td style="text-align:center">bbs</td></tr>
+<tr><td>皮肤</td><td style="text-align:center">skin</td></tr>
+</tbody>
+</table>
+<p>如果什么都不填，则自动默认值为 other。</p>
+<p>如果以上可选项都不适用于该内容模块，请联系需求接口人。</p>
+<h2><a class="anchor" aria-hidden="true" id="曝光埋点"></a><a href="#曝光埋点" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>曝光埋点</h2>
+<p>用来统计官网的模块的曝光量和模块点击；</p>
+<blockquote>
+<p>官网一定要添加</p>
+</blockquote>
+<h3><a class="anchor" aria-hidden="true" id="使用方法"></a><a href="#使用方法" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>使用方法</h3>
+<p>PC 端和移动端用法一样； 在官网模块 dom 结构上添加 exposure-tag=&quot;英文名,中文解释&quot; 属性及值；</p>
+<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"news"</span> <span class="hljs-attr">exposure-tag</span>=<span class="hljs-string">"英文名,中文解释"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- 例如： --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"news"</span> <span class="hljs-attr">exposure-tag</span>=<span class="hljs-string">"news,新闻"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p><strong>官网曝光埋点案例：</strong></p>
+<p><img src="https://game.gtimg.cn/images/tgideas/doc/cntimg/gitbook/spec/common-datareport1.png" alt=""></p>
+<h2><a class="anchor" aria-hidden="true" id="按钮上报"></a><a href="#按钮上报" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>按钮上报</h2>
+<h3><a class="anchor" aria-hidden="true" id="pc-端"></a><a href="#pc-端" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PC 端</h3>
+<pre><code class="hljs css language-html"><span class="hljs-comment">&lt;!-- 开始游戏 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"PTTSendClick('btn','start','开始游戏');"</span>&gt;</span>开始游戏<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- 分享给朋友 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"PTTSendClick('btn','share','分享');"</span>&gt;</span>分享给朋友<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- 预约--&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"PTTSendClick('btn','order','预约');"</span>&gt;</span>预约<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- 下载游戏 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"PTTSendClick('btn','download','下载游戏');"</span>&gt;</span>下载游戏<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- 视频播放 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">"PTTSendClick('btn','playvideo','播放视频');"</span>&gt;</span>播放视频<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="移动端"></a><a href="#移动端" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>移动端</h3>
+<pre><code class="hljs css language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:;"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"btnStart"</span>&gt;</span>开始游戏<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"//ossweb-img.qq.com/images/js/mobile_build/util/zepto.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  $(<span class="hljs-string">'#btnStart'</span>).tap(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    PTTSendClick(<span class="hljs-string">'btn'</span>, <span class="hljs-string">'start'</span>, <span class="hljs-string">'开始游戏'</span>);
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>直接在 dom 元素上增加 onclick 事件，在传递参数的时候，请确保双引号和单引号的嵌套使用正确。 页面中，PTTSendClick 传递的第二个参数不能重复，必须是唯一值</p>
+</blockquote>
+<p>如页面为翻屏形式，在每次翻屏结束时的回调函数中执行上报，其中 e.nowpage 为当前页,e.nextpage 为翻屏触达的页</p>
+<pre><code class="hljs css language-js">PTTSendClick(<span class="hljs-string">'page'</span>, <span class="hljs-string">'page'</span> + e.nowpage + <span class="hljs-string">'to'</span> + <span class="hljs-string">'page'</span> + e.nextpage, <span class="hljs-string">'翻屏'</span>);
+</code></pre>
+<p>H5 专题中，如需要统计页面加载流失等，可以将 PTT 组件前置放在 head 中，JS 脚本执行</p>
+<pre><code class="hljs css language-js">PTTSendClick(<span class="hljs-string">'page'</span>, <span class="hljs-string">'loadstart'</span>, <span class="hljs-string">'开始加载'</span>);
+</code></pre>
+<p>在页面加载完成的回调函数中执行</p>
+<pre><code class="hljs css language-js">PTTSendClick(<span class="hljs-string">'page'</span>, <span class="hljs-string">'loadend'</span>, <span class="hljs-string">'加载结束'</span>);
+</code></pre>
+<blockquote>
+<p>如在脚本中使用到 PTTSendClick，比方说统计流失率。</p>
+</blockquote>
+<blockquote>
+<p>在页面的进入执行 PTTSendClick('loading','loadstart','开始加载');</p>
+</blockquote>
+<blockquote>
+<p>以及加载完成执行 PTTSendClick('loading','loadend','加载完成')进行数据上报时候，需要确保在此之前 PTT 组件已经加载完成且已经执行过 pgvMain 这个函数，不然执行 PTTSendClick 会报错。</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="adtag-上报"></a><a href="#adtag-上报" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ADTAG 上报</h2>
+<p>数据上报还有另外一种方式是在链接上加一个参数，用于特定渠道访问量统计。比如链接是<a href="http://pvp.qq.com">http://pvp.qq.com</a>，那在后面拼接参数ADTAG=专题名称.位置.描述</p>
+<p>注：用英文句号.做分割，最多不可超过 4 个</p>
+<p>最终为：<a href="http://pvp.qq.com?ADTAG=a20170505.btn.logo">http://pvp.qq.com?ADTAG=a20170505.btn.logo</a></p>
+<blockquote>
+<p>如果原链接本来就带参数，比如<code>http://pvp.qq.com/path/page.html?id=123,加上&amp;再拼接即可</code>，和平常的<code>url</code>传参方式一样。</p>
+</blockquote>
+<blockquote>
+<p>最终为：<code>http://pvp.qq.com/path/page.html?id=123&amp;ADTAG=a20170505.btn.logo</code></p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="虚拟上报"></a><a href="#虚拟上报" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>虚拟上报</h2>
+<p>虚拟上报分为虚拟域名和虚拟页面</p>
+<ul>
+<li>虚拟页面</li>
+</ul>
+<p>如果一个页面需要区分多种情况，可以构造不同的虚拟 URL，这样就可以使用虚拟后的 URL 查看此页面的数据，</p>
+<p>其中 virtualURL：虚拟 URL，注意不要包含域名。</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> pgvMain == <span class="hljs-string">'function'</span>) pgvMain({ <span class="hljs-attr">virtualURL</span>: <span class="hljs-string">'/path/xxx.html'</span> });
+</code></pre>
+<ul>
+<li>虚拟域名</li>
+</ul>
+<p>适用情形：如果一个页面需要上报数据到另外的域名，可以构造虚拟域名，构造虚拟域名后需在虚拟域名下查看该页面的数据</p>
+<p>virtualDomain：虚拟域名，会发送这个域名到点击流服务器</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> pgvMain == <span class="hljs-string">'function'</span>) pgvMain({ <span class="hljs-attr">virtualDomain</span>: <span class="hljs-string">'xxx.qq.com'</span> });
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="其他上报方式"></a><a href="#其他上报方式" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>其他上报方式</h2>
+<p>除非项目指定使用以下 ping_tcss_ied 上报数据，否则统一使用上面的 PTT 统计代码组件</p>
+<ul>
+<li><strong>页面 PV 统计</strong></li>
+</ul>
+<pre><code class="hljs css language-html"><span class="hljs-comment">&lt;!-- 底部加入JS --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"//pingjs.qq.com/ping_tcss_ied.js"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> pgvMain == <span class="hljs-string">'function'</span>) {
+    pgvMain();
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<ul>
+<li><strong>按钮上报</strong></li>
+</ul>
+<pre><code class="hljs css language-html"><span class="hljs-comment">&lt;!-- 按钮上报，参数为：专题名称.页面名称.元素描述.功能 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span>
+  <span class="hljs-attr">href</span>=<span class="hljs-string">"javascript:;"</span>
+  <span class="hljs-attr">onclick</span>=<span class="hljs-string">"pgvSendClick({hottag:'a20150825file.index.btn.open'});"</span>
+&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>使用<code>ping_tcss_ied</code>上报时候，虚拟上报和 ADTAG 使用同 <code>PTT 统计代码组件</code>。</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-10-9 by 岑少任</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-fex/docs/1.0.4/page-guide-img"><span class="arrow-prev">← </span><span>图片处理</span></a><a class="docs-next button" href="/docusaurus-fex/docs/1.0.4/page-guide-pc-compatible"><span>浏览器兼容</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#页面-pv-统计代码">页面 PV 统计代码</a></li><li><a href="#关于-setsiteproject">关于 setSite.project</a></li><li><a href="#曝光埋点">曝光埋点</a><ul class="toc-headings"><li><a href="#使用方法">使用方法</a></li></ul></li><li><a href="#按钮上报">按钮上报</a><ul class="toc-headings"><li><a href="#pc-端">PC 端</a></li><li><a href="#移动端">移动端</a></li></ul></li><li><a href="#adtag-上报">ADTAG 上报</a></li><li><a href="#虚拟上报">虚拟上报</a></li><li><a href="#其他上报方式">其他上报方式</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-fex/" class="nav-home"><img src="/docusaurus-fex/img/logo.png" alt="前端技术文档库" width="48" height="48" style="max-width:initial"/></a><div><h5>Docs</h5><a href="/docusaurus-fex/docs/en/start.html">快速开始</a><a href="/docusaurus-fex/docs/en/page-guide.html">查看规范</a><a href="/docusaurus-fex/docs/en/reading-more.html">拓展阅读</a></div><div><h5>Community</h5><a href="/docusaurus-fex/en/users.html">User Showcase</a><a href="/docusaurus-fex/en/business.html">business</a></div><div><h5>More</h5><a href="/docusaurus-fex/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docusaurus-fex/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/><section class="copyright">Copyright © 2020 友点科技</section></a></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '3eb9507824b8be89e7a199ecaa1a9d2c',
+                indexName: 'docusaurus',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {"facetFilters":["language:en","version:1.0.4"]}
+              });
+            </script></body></html>
