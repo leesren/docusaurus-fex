@@ -1,0 +1,457 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>高级选项 · 前端技术文档库</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## 探针 API 使用入门"/><meta name="docsearch:version" content="1.0.8"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="高级选项 · 前端技术文档库"/><meta property="og:type" content="website"/><meta property="og:url" content="https://leesren.github.io/docusaurus-fex/"/><meta property="og:description" content="## 探针 API 使用入门"/><meta property="og:image" content="https://leesren.github.io/docusaurus-fex/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/docusaurus-fex/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://leesren.github.io/docusaurus-fex/blog/atom.xml" title="前端技术文档库 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://leesren.github.io/docusaurus-fex/blog/feed.xml" title="前端技术文档库 Blog RSS Feed"/><script type="text/javascript" src="/docusaurus-fex//js/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/docusaurus-fex//js/code-blocks-buttons.js"></script><script src="/docusaurus-fex/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-fex/css/prism.css"/><link rel="stylesheet" href="/docusaurus-fex/css/main.css"/><script src="/docusaurus-fex/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-fex/"><img class="logo" src="/docusaurus-fex/img/favicon.ico" alt="前端技术文档库"/><h2 class="headerTitleWithLogo">前端技术文档库</h2></a><a href="/docusaurus-fex/versions"><h3>1.0.8</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class="siteNavGroupActive"><a href="/docusaurus-fex/docs/start" target="_self">快速开始</a></li><li class=""><a href="/docusaurus-fex/docs/doc4" target="_self">API</a></li><li class=""><a href="/docusaurus-fex/help" target="_self">Help</a></li><li class=""><a href="/docusaurus-fex/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>前端监控</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">关于规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/start">快速上手</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/restructure-frontend-rules-choice">重构答疑</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/restructure-frontend-shape-screen">游戏内异形屏适配规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/restructure-frontend-rules-html">HTML 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/restructure-frontend-rules-css">CSS 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/restructure-frontend-rules-js">Javascript 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/restructure-frontend-rules-vue">Vue.js 组件编码规范</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">页面规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide">页面规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-header">页面头部</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-css">CSS 规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-name">注释与命名</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-dir">文件目录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-img">图片处理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-sta">数据统计</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----PC端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-pc-compatible">浏览器兼容</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-pc-share">页面分享</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----移动端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-mobile-design">移动端页面设计规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-mobile-font">移动端页面字体使用参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-mobile-rem">rem 布局</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-mobile-compatible">移动端页面兼容要求</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/page-guide-mobile-media">移动端 H5 页面音频/视频规范</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">工具/系统<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/tools">常用工具/参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/cdn">常用 JS 库 CDN</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/img-press">图片压缩工具</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">特殊规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/spec-concheck">页面内容检查</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/spec-version">版本管理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/code-review">代码健壮</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">扩展阅读<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/reading-more">拓展阅读</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/safe">WEB 前端页面安全指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/performance">移动端页面性能优化指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/viewport">视口（viewport）基础知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/mobile-response">移动端页面适配知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/mobile-event">移动端事件介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/style-guide-airbnb-js">Airbnb JavaScript 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/style-guide-react">React 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/style-guide-vue2">Vue 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/style-guide-angular">Angular - 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/style-guide-ts">TypeScript</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/style-guide-You-Dont-Know-JS">你不懂 JS（系列丛书）【中文】</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/style-guide-cache">缓存</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/style-guide-chrome-devtools">Chrome 开发者工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/style-guide-input">输入框问题</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/style-guide-error">错误监控</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端导航<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/fe-nav">前端导航</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端监控<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/monitor/intro">产品介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/monitor/start">快速开始</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/monitor/usage">用户使用手册</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-fex/docs/monitor/advance">高级选项</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/monitor/faq">FAQ</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">技巧<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/tips/frame">帧率调节</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/tips/speedup">加速减速</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/tips/array">数组</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/tips/task">任务队列</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/tips/css-tips">CSS 技巧</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">业务<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/business/ArrayBuffer">ArrayBuffer 工具类</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/business/enums">枚举类型 enums</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/business/exception">自定义 Exception</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/business/fs">Node fs 模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/business/http">Http 相关</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/business/node-tips">Node 记录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/business/nodejs">Node 常用扩展模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/business/nodejs2">Node 常用扩展模块 2</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/business/utils">常用工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/business/validators">validators 表单验证</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/business/vue">Vue 记录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/business/react">React 知识汇总</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">高级选项</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="探针-api-使用入门"></a><a href="#探针-api-使用入门" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>探针 API 使用入门</h2>
+<h2><a class="anchor" aria-hidden="true" id="1、探针接入方式"></a><a href="#1、探针接入方式" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1、探针接入方式</h2>
+<h3><a class="anchor" aria-hidden="true" id="11-cdn-方式接入（快捷接入）"></a><a href="#11-cdn-方式接入（快捷接入）" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.1 cdn 方式接入（快捷接入）</h3>
+<p>请按照以下步骤和图例说明接入探针。</p>
+<ul>
+<li>在平台创建 HTML5 应用后，选择<code>&lt;script&gt;</code>标签引入接入方式。</li>
+<li>点击复制代码并粘贴到 <code>&lt;/head&gt;</code>节点。</li>
+</ul>
+<blockquote>
+<p>注意事项</p>
+</blockquote>
+<ul>
+<li>在 head 内初始化能更早发现初始化前的问题。也可以放到 body 内，但必须保证在 onLoad 之前初始化，否则会丢失 PV 和页面性能数据。</li>
+<li>使用 amd 加载器（如 requirejs）的页面不能直接使用这段脚本。</li>
+</ul>
+<p><img src="../../../img/head-load.png" alt=""></p>
+<h3><a class="anchor" aria-hidden="true" id="12-npm-方式接入"></a><a href="#12-npm-方式接入" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2 npm 方式接入</h3>
+<p>请按照以下步骤和图例说明接入探针。</p>
+<ul>
+<li>在平台创建 HTML5 应用后，选择 npm 接入方式。</li>
+<li>按照平台指引，安装探针，并复制初始化代码到您的代码中。</li>
+</ul>
+<p><img src="../../../img/npm-load.png" alt=""></p>
+<p><strong>示例代码</strong></p>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">import</span> wpkReporter <span class="hljs-keyword">from</span> <span class="hljs-string">"wpk-reporter"</span>; <span class="hljs-comment">// 导入基础sdk</span>
+
+<span class="hljs-keyword">const</span> __wpk = <span class="hljs-keyword">new</span> wpkReporter({
+  bid: <span class="hljs-string">"5ljeschs-nk2v7ecl"</span>, <span class="hljs-comment">// 新建应用时确定</span>
+  spa: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 单页应用开启后，可更准确地采集PV</span>
+  uid: <span class="hljs-string">""</span>, <span class="hljs-comment">// 支持函数，需返回最终的uid字符串</span>
+  rel: <span class="hljs-string">""</span>, <span class="hljs-comment">// 支持函数，需返回最终的版本字符串</span>
+  plugins: []
+});
+
+__wpk.installAll(); <span class="hljs-comment">// 初始化sdk 必须调用</span>
+
+<span class="hljs-comment">// 主动上报自定义数据(PS此处为示例)</span>
+__wpk.report({
+  category: <span class="hljs-number">100</span>, <span class="hljs-comment">// 必填创建自定义监控项时自动生成</span>
+  msg: <span class="hljs-string">"hello world"</span>,
+  c1: <span class="hljs-string">"xx"</span> <span class="hljs-comment">// 自定义字段，支持c1~c5共5个字段</span>
+});
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="13-amd-方式接入"></a><a href="#13-amd-方式接入" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.3 amd 方式接入</h3>
+<p>wpkReporter.js 是一个 umd 模块，兼容 普通 H5、amd、cmd 跟 nodejs 等多种环境。如果你的页面使用了 amd 规范的模块加载器，比如 requirejs，那么有下面两种引用方式。</p>
+<p>请按照以下步骤和图例说明接入探针。</p>
+<ul>
+<li>在平台创建 HTML5 应用后，选择 AMD 加载器 接入方式，如下图所示。</li>
+<li>按照平台指引，复制初始化代码到您的代码中。</li>
+</ul>
+<p><img src="../../../img/amd-load.png" alt=""></p>
+<h2><a class="anchor" aria-hidden="true" id="2、数据上报"></a><a href="#2、数据上报" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2、数据上报</h2>
+<p>通常情况下，若无自定义上报数据需求，那么探针接入已经完成。</p>
+<p>如果您有自定义上报数据的需求，探针提供了主动上报数据的 API。</p>
+<h3><a class="anchor" aria-hidden="true" id="21-上报自定义监控"></a><a href="#21-上报自定义监控" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1 上报自定义监控</h3>
+<p><strong>API: report(logData)</strong></p>
+<ul>
+<li>创建自定义监控项</li>
+</ul>
+<p>为了数据能在平台正确展示，首先需要在平台创建一个监控项 「应用设置-监控项管理-添加监控项」。</p>
+<ul>
+<li>在你的页面根据业务上报数据</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="3、api"></a><a href="#3、api" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3、API</h2>
+<p>温馨提示</p>
+<ul>
+<li>调用 api 之前，请确保实例本身已被初始化</li>
+<li>所有 api 都返回探针实例本身，因此所有 api 都可以链式调用</li>
+</ul>
+<h3><a class="anchor" aria-hidden="true" id="reportlogdata"></a><a href="#reportlogdata" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>.report(logData)</h3>
+<p>主动上报一条自定义日志，日志类容为 logData 且必填，logData 支持的属性如下。</p>
+<h3><a class="anchor" aria-hidden="true" id="reportflow"></a><a href="#reportflow" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>.reportFlow()</h3>
+<p>主动上报一条打点日志，上报一次，平台「页面分析」中的 PV 会增加 1。</p>
+<h3><a class="anchor" aria-hidden="true" id="reporterrorerror"></a><a href="#reporterrorerror" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>.reportError(error)</h3>
+<p>用于主动上报一条 JS Error 日志；error 为 JS Error 对象。</p>
+<h3><a class="anchor" aria-hidden="true" id="reportapierrordata"></a><a href="#reportapierrordata" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>.reportApiError(data)</h3>
+<p>用于主动上报一条 API 监控日志。</p>
+<ul>
+<li>适用场景</li>
+</ul>
+<p>探针本身已经支持对 api 进行监控，api 请求的成功失败，通过 status 的值判断，若您的 api 返回值都是 200，而通过 response body 判断中的自定义 code 判断，建议使用此 API 自行上报。</p>
+<h3><a class="anchor" aria-hidden="true" id="setconfigopts"></a><a href="#setconfigopts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>.setConfig(opts)</h3>
+<p>更新探针实例配置。</p>
+<h3><a class="anchor" aria-hidden="true" id="install"></a><a href="#install" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>.install()</h3>
+<p>探针安装，即初始化所有配置和插件后调用此方法，探针才能正常工作。</p>
+<p>注意：调用此 api 安装探针时，只对 plugins 中已配置的插件生效。</p>
+<h3><a class="anchor" aria-hidden="true" id="installall"></a><a href="#installall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>.installAll()</h3>
+<p>全家桶式的安装探针，内置所有插件将全部生效。</p>
+<h3><a class="anchor" aria-hidden="true" id="uninstall"></a><a href="#uninstall" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>.uninstall()</h3>
+<p>卸载探针实例，销毁所有监听实例，主动上报、自动上报功能不再生效。</p>
+<h2><a class="anchor" aria-hidden="true" id="探针-api-使用进阶"></a><a href="#探针-api-使用进阶" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>探针 API 使用进阶</h2>
+<p>本文将会进一步为你讲解探针构造函数配置、设置插件、如忽略部分 JS 异常、设置用户 id 等。</p>
+<h3><a class="anchor" aria-hidden="true" id="1、探针配置"></a><a href="#1、探针配置" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1、探针配置</h3>
+<p>在《快速接入》一文中已经讲到了如何初始化探针，而初始化探针时可通过构造方法传入 Object 类型的配置参数。本文将深入讲解配置参数。</p>
+<h4><a class="anchor" aria-hidden="true" id="11、-探针配置-demo"></a><a href="#11、-探针配置-demo" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.1、 探针配置 demo</h4>
+<p>创建探针实例代码示例。</p>
+<pre><code class="hljs css language-js"><span class="hljs-comment">// 1、 构造方法参数设置配置</span>
+<span class="hljs-keyword">const</span> __wpk = <span class="hljs-keyword">new</span> wpkReporter({
+ <span class="hljs-attr">bid</span>: <span class="hljs-string">'应用唯一标识'</span>,
+ <span class="hljs-attr">rel</span>: <span class="hljs-string">''</span>, <span class="hljs-comment">// 支持函数，需返回最终的版本字符串'</span>
+ <span class="hljs-attr">uid</span>: <span class="hljs-string">''</span>, <span class="hljs-comment">// 支持函数，需返回最终的uid字符串</span>
+ <span class="hljs-attr">plugins</span>: [], <span class="hljs-comment">// 可选</span>
+ <span class="hljs-attr">spa</span>: <span class="hljs-literal">false</span>   <span class="hljs-comment">// 如果你的应用是spa，那就大胆的设为true吧，默认false</span>
+})
+__wpk.install()
+<span class="hljs-comment">// or</span>
+<span class="hljs-comment">// 2、通过api设置配置</span>
+__wpk.setConfig({
+   <span class="hljs-attr">uid</span>: <span class="hljs-string">'testid'</span>,
+ ...
+})
+
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="12、配置参数说明"></a><a href="#12、配置参数说明" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1.2、配置参数说明</h4>
+<p><strong>bid</strong></p>
+<ul>
+<li>类型：String</li>
+<li>必填：是</li>
+<li>默认值：无</li>
+<li>描述：平台分配的应用唯一标识，在创建应用时自动分配的 <code>应用标识</code> 字段</li>
+</ul>
+<p><strong>rel</strong></p>
+<ul>
+<li>类型：String,Function</li>
+<li>必填：否</li>
+<li>默认值：无</li>
+<li>注意事项：若设置为 Function，则终需要返回一个字符串</li>
+<li>描述：前端版本号，推荐设置，设置后，可在平台进行版本对比等操作</li>
+</ul>
+<p>示例代码</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">new</span> wpkReporter({
+  <span class="hljs-attr">bid</span>: <span class="hljs-string">"应用唯一标识"</span>,
+  <span class="hljs-attr">rel</span>: <span class="hljs-string">"2.2.1"</span>
+});
+<span class="hljs-comment">// or</span>
+<span class="hljs-keyword">new</span> wpkReporter({
+  <span class="hljs-attr">bid</span>: <span class="hljs-string">"应用唯一标识"</span>,
+  <span class="hljs-attr">rel</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// 自实现rel获取逻辑</span>
+    <span class="hljs-keyword">return</span> rel;
+  }
+});
+</code></pre>
+<p><strong>uid</strong></p>
+<ul>
+<li>类型：String,Function</li>
+<li>必填：否</li>
+<li>默认值：uuid</li>
+<li>注意事项：若设置为 Function，则终需要返回一个字符串</li>
+<li>描述：浏览当前页面的用户唯一标识，推荐设置</li>
+<li>示例代码</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">new</span> wpkReporter({
+  <span class="hljs-attr">bid</span>: <span class="hljs-string">"应用唯一标识"</span>,
+  <span class="hljs-attr">uid</span>: <span class="hljs-string">"useridStr"</span>
+});
+<span class="hljs-comment">// or</span>
+<span class="hljs-keyword">new</span> wpkReporter({
+  <span class="hljs-attr">bid</span>: <span class="hljs-string">"应用唯一标识"</span>,
+  <span class="hljs-attr">uid</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">// 自实现uid逻辑</span>
+    <span class="hljs-keyword">return</span> uid;
+  }
+});
+</code></pre>
+<p><strong>plugins</strong></p>
+<ul>
+<li>类型：Array (二维数组）</li>
+<li>必填：否</li>
+<li>默认值：wpkflowPlugin 或 所有插件</li>
+<li>注意事项：若未设置此项。使用 install() 安装时，默认 wpkflowPlugin。使用 installAll() 安装时，默认所有插件</li>
+<li>描述：需要开启的插件</li>
+<li>示例代码: (更多插件，详见插件配置）</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> __wpk = <span class="hljs-keyword">new</span> wpkReporter({
+  <span class="hljs-attr">bid</span>: <span class="hljs-string">"应用唯一标识"</span>,
+  <span class="hljs-attr">rel</span>: <span class="hljs-string">""</span>, <span class="hljs-comment">// 支持函数，需返回最终的版本字符串'</span>
+  <span class="hljs-attr">uid</span>: <span class="hljs-string">""</span>, <span class="hljs-comment">// 支持函数，需返回最终的uid字符串</span>
+  <span class="hljs-attr">plugins</span>: [
+    [
+      wpkglobalerrorPlugin,
+      {
+        <span class="hljs-attr">resErr</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-attr">jsErr</span>: <span class="hljs-literal">true</span>
+      }
+    ]
+  ], <span class="hljs-comment">// 可选</span>
+  <span class="hljs-attr">spa</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// 如果你的应用是spa，那就大胆的设为true吧，默认false</span>
+});
+</code></pre>
+<p><strong>sampleRate</strong></p>
+<ul>
+<li>类型：Number</li>
+<li>必填：否</li>
+<li>默认值：1</li>
+<li>注意事项：0~1 之间的任何数字</li>
+<li>描述：采样率</li>
+</ul>
+<p><strong>spa</strong></p>
+<ul>
+<li>类型：Boolean</li>
+<li>必填：否</li>
+<li>默认值：false</li>
+<li>描述：是否为单页面应用，针对单页面应用开启此选项后，可更准确地采集 PV</li>
+</ul>
+<p><strong>debug</strong></p>
+<ul>
+<li>类型：Boolean</li>
+<li>必填：否</li>
+<li>默认值：false</li>
+<li>注意事项：生产环境不要开启此项</li>
+<li>描述：是否开启 debug 模式，开启后，将会有更详细的打点过程日志输出，一般用于接入时验证</li>
+</ul>
+<p><strong>cluster</strong></p>
+<ul>
+<li>类型：String</li>
+<li>必填：否</li>
+<li>默认值：'cn'</li>
+<li>注意事项：可选值： 'cn'：国内集群；'intl': 国际集群。请注意 cluster 配置必须与使用平台相匹配</li>
+</ul>
+<p><strong>ignoreScriptError</strong></p>
+<ul>
+<li>类型：Boolean</li>
+<li>必填：否</li>
+<li>默认值：true</li>
+<li>描述：是否忽略 JS 异常中的 Scrpit error 错误</li>
+</ul>
+<p><strong>beforeSend</strong></p>
+<ul>
+<li>类型：Function</li>
+<li>必填：否</li>
+<li>默认值：无</li>
+<li>描述：日志上报的前置处理，返回 false 可阻止日志上报</li>
+</ul>
+<p>示例代码</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">new</span> wpkReporter({
+  <span class="hljs-attr">bid</span>: <span class="hljs-string">"应用唯一标识"</span>,
+  <span class="hljs-attr">beforeSend</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">logData</span>) </span>{
+    <span class="hljs-comment">// 根据自身业务和数据，判断是否要上报</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+  }
+});
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="2、插件化配置及使用"></a><a href="#2、插件化配置及使用" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2、插件化配置及使用</h3>
+<p>如果你需要一些更深入，更高端的玩法，那么本主题你将会带你走上高玩之路</p>
+<h4><a class="anchor" aria-hidden="true" id="21-接入"></a><a href="#21-接入" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1 接入</h4>
+<p>我们先忘记之前的快速接入，从 0 开始来。</p>
+<h4><a class="anchor" aria-hidden="true" id="211、基础引入和初始化"></a><a href="#211、基础引入和初始化" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1.1、基础引入和初始化</h4>
+<pre><code class="hljs css language-html"><span class="hljs-comment">&lt;!--引入探针核心 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">"https://g.alicdn.com/woodpeckerx/jssdk??wpkReporter.js"</span>
+  <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"true"</span>
+&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> reporter = <span class="hljs-keyword">new</span> wpkReporter({
+      <span class="hljs-attr">bid</span>: <span class="hljs-string">""</span>,
+      <span class="hljs-attr">rel</span>: <span class="hljs-string">"0.0.0"</span>, <span class="hljs-comment">// 支持函数，需返回最终的版本字符串'</span>
+      <span class="hljs-attr">uid</span>: <span class="hljs-string">"xxx"</span>, <span class="hljs-comment">// 支持函数，需返回最终的uid字符串</span>
+      <span class="hljs-attr">plugins</span>: [],
+      <span class="hljs-attr">spa</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// 如果你的应用是spa，那就大胆的设为true吧，默认false</span>
+    });
+    reporter.install();
+    <span class="hljs-built_in">window</span>.__wpk = reporter;
+  })(<span class="hljs-built_in">window</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>此时，我们引入了探针的核心，同时获得了 PV 打点及主动上报数据的功能（JS 异常、资源异常、页面性能啥的都没有了）。</p>
+<h4><a class="anchor" aria-hidden="true" id="212、尝试添插件"></a><a href="#212、尝试添插件" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.1.2、尝试添插件</h4>
+<p>以 globalerror 插件为例。</p>
+<pre><code class="hljs css language-html"><span class="hljs-comment">&lt;!--引入探针和一个插件 --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">"https://g.alicdn.com/woodpeckerx/jssdk??wpkReporter.js,plugins/globalerror.js"</span>
+  <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"true"</span>
+&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+  (<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> reporter = <span class="hljs-keyword">new</span> wpkReporter({
+      <span class="hljs-attr">bid</span>: <span class="hljs-string">""</span>,
+      <span class="hljs-attr">rel</span>: <span class="hljs-string">"0.0.0"</span>, <span class="hljs-comment">// 支持函数，需返回最终的版本字符串'</span>
+      <span class="hljs-attr">uid</span>: <span class="hljs-string">"xxx"</span>, <span class="hljs-comment">// 支持函数，需返回最终的uid字符串</span>
+      <span class="hljs-attr">plugins</span>: [
+        [
+          wpkglobalerrorPlugin, <span class="hljs-comment">// 插件名</span>
+          {
+            <span class="hljs-comment">// 配置参数</span>
+            <span class="hljs-attr">resErr</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 你获得了资源异常监控技能</span>
+            <span class="hljs-attr">resErrFilter</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+              <span class="hljs-comment">// 根据你自身的需求决定是否上报</span>
+              <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>; <span class="hljs-comment">// 返回true，则上报日志，返回false，丢弃日志</span>
+            },
+            <span class="hljs-attr">jsErr</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">//你获得了JS异常监控技能</span>
+            <span class="hljs-attr">jsErrFilter</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
+              <span class="hljs-comment">// 根据你自身业务需要进行过滤</span>
+              <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>; <span class="hljs-comment">// 返回true，则上报日志，返回false，丢弃日志</span>
+            }
+          }
+        ]
+      ],
+      <span class="hljs-attr">spa</span>: <span class="hljs-literal">false</span> <span class="hljs-comment">// 如果你的应用是spa，那就大胆的设为true吧，默认false</span>
+    });
+    reporter.install();
+    <span class="hljs-built_in">window</span>.__wpk = reporter;
+  })(<span class="hljs-built_in">window</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<blockquote>
+<p>PS：请认真关注 探针引入 及 插件(plugins) 的变化，你就明白了如何增加一个插件了</p>
+</blockquote>
+<h4><a class="anchor" aria-hidden="true" id="22、插件列表"></a><a href="#22、插件列表" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2.2、插件列表</h4>
+<p><strong>JS&amp;资源异常插件</strong></p>
+<ul>
+<li>插件名：wpkglobalerrorPlugin</li>
+<li>引入路径：plugins/globalerror.js</li>
+<li>包含功能：JS 异常，资源加载异常监控</li>
+<li>配置参数</li>
+</ul>
+<pre><code class="hljs css language-js">{
+ <span class="hljs-attr">jsErr</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 是否开启js error监控</span>
+ <span class="hljs-attr">jsErrSampleRate</span>: <span class="hljs-number">1</span>, <span class="hljs-comment">// js error采样率，默认为 1</span>
+ <span class="hljs-attr">jsErrFilter</span>: fn, <span class="hljs-comment">// js error过滤回调函数，参数为 error对象，返回 false则不上报</span>
+ <span class="hljs-attr">resErr</span>: <span class="hljs-literal">false</span>, <span class="hljs-comment">// 是否开启资源加载异常监控</span>
+ <span class="hljs-attr">resErrSampleRate</span>: <span class="hljs-number">1</span>, <span class="hljs-comment">// 资源异常监控采样率，默认为 1</span>
+ <span class="hljs-attr">resErrFilter</span>: fn <span class="hljs-comment">// 资源加载异常过滤的回调函数，参数为 error对象，返回 false则不上报</span>
+}
+
+</code></pre>
+<p><strong>API 监控插件</strong></p>
+<ul>
+<li>插件名：wpkinterfacePlugin</li>
+<li>引入路径：plugins/interface.js</li>
+<li>包含功能：API 监控 （只支持基于 XMLHttpRequest 和 Fetch）</li>
+<li>配置参数</li>
+</ul>
+<pre><code class="hljs css language-js">{
+ <span class="hljs-attr">enable</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 默认为 true，可设为false关闭插件功能</span>
+   <span class="hljs-attr">sampleRate</span>: <span class="hljs-number">1</span>, <span class="hljs-comment">// 采样率，默认为 1</span>
+    <span class="hljs-attr">withBody</span>: <span class="hljs-literal">false</span>, <span class="hljs-comment">// 是否上报请求的body参数，可能涉及敏感信息，故默认 false</span>
+ <span class="hljs-attr">withResp</span>: <span class="hljs-literal">false</span>, <span class="hljs-comment">// 上报日志是否包含api返回数据，可能涉及敏感信息，故默认 false</span>
+   <span class="hljs-attr">errorFilter</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">params</span>) </span>{
+  <span class="hljs-comment">/* params 格式
+   {
+     url: '', // api url，
+     status: 200, // http status
+     response: '' // API请求的body内容
+     // 详细可参考
+     // https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/response
+     // https://developer.mozilla.org/zh-CN/docs/Web/API/Response
+   }
+   */</span>
+   <span class="hljs-comment">// 返回值可以是 false 或者 Object 对象。返回false 则此次api数据直接丢弃</span>
+   <span class="hljs-keyword">return</span> customParams
+}
+}
+
+</code></pre>
+<p><strong>errorFilter 返回数据</strong>
+若需要在此时对 API 上报数据进行自定义或阻止符合特定条件的数据上报时，customParams 的定义就非常有用且重要，返回参数如下。</p>
+<pre><code class="hljs css language-js"><span class="hljs-comment">// customParams 可选如下</span>
+<span class="hljs-literal">false</span> <span class="hljs-comment">// 阻止本次数据上报</span>
+
+<span class="hljs-comment">// or Object</span>
+{
+ <span class="hljs-attr">bizCode</span>: <span class="hljs-number">404</span>, <span class="hljs-comment">// 对标http status。当你的接口 http status都是 200，通过内部错误码标识时，可设置次值</span>
+ <span class="hljs-attr">msg</span>: <span class="hljs-string">'err'</span> <span class="hljs-comment">// api错误信息。若要上报此字段。配置参数中withResp必须设置为true，</span>
+}
+
+</code></pre>
+<p><strong>性能监控插件</strong></p>
+<ul>
+<li>插件名：wpkperformancePlugin</li>
+<li>引入路径：plugins/performance.js</li>
+<li>包含功能：页面性能监控</li>
+<li>配置参数</li>
+</ul>
+<pre><code class="hljs css language-js">{
+   <span class="hljs-attr">enable</span>: <span class="hljs-literal">true</span>, <span class="hljs-comment">// 默认为 true，可设为false关闭上报</span>
+  <span class="hljs-attr">sampleRate</span>: <span class="hljs-number">1</span> <span class="hljs-comment">// 采样率，默认 100%</span>
+}
+
+</code></pre>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-11-28 by 岑少任</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-fex/docs/monitor/usage"><span class="arrow-prev">← </span><span>用户使用手册</span></a><a class="docs-next button" href="/docusaurus-fex/docs/monitor/faq"><span>FAQ</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#探针-api-使用入门">探针 API 使用入门</a></li><li><a href="#1、探针接入方式">1、探针接入方式</a><ul class="toc-headings"><li><a href="#11-cdn-方式接入（快捷接入）">1.1 cdn 方式接入（快捷接入）</a></li><li><a href="#12-npm-方式接入">1.2 npm 方式接入</a></li><li><a href="#13-amd-方式接入">1.3 amd 方式接入</a></li></ul></li><li><a href="#2、数据上报">2、数据上报</a><ul class="toc-headings"><li><a href="#21-上报自定义监控">2.1 上报自定义监控</a></li></ul></li><li><a href="#3、api">3、API</a><ul class="toc-headings"><li><a href="#reportlogdata">.report(logData)</a></li><li><a href="#reportflow">.reportFlow()</a></li><li><a href="#reporterrorerror">.reportError(error)</a></li><li><a href="#reportapierrordata">.reportApiError(data)</a></li><li><a href="#setconfigopts">.setConfig(opts)</a></li><li><a href="#install">.install()</a></li><li><a href="#installall">.installAll()</a></li><li><a href="#uninstall">.uninstall()</a></li></ul></li><li><a href="#探针-api-使用进阶">探针 API 使用进阶</a><ul class="toc-headings"><li><a href="#1、探针配置">1、探针配置</a></li><li><a href="#2、插件化配置及使用">2、插件化配置及使用</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-fex/" class="nav-home"><img src="/docusaurus-fex/img/logo.png" alt="前端技术文档库" width="48" height="48" style="max-width:initial"/></a><div><h5>Docs</h5><a href="/docusaurus-fex/docs/en/start.html">快速开始</a><a href="/docusaurus-fex/docs/en/page-guide.html">查看规范</a><a href="/docusaurus-fex/docs/en/reading-more.html">拓展阅读</a></div><div><h5>Community</h5><a href="/docusaurus-fex/en/users.html">User Showcase</a><a href="/docusaurus-fex/en/business.html">business</a></div><div><h5>More</h5><a href="/docusaurus-fex/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docusaurus-fex/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/><section class="copyright">Copyright © 2020 友点科技</section></a></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '3eb9507824b8be89e7a199ecaa1a9d2c',
+                indexName: 'docusaurus',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {"facetFilters":["language:en","version:1.0.8"]}
+              });
+            </script></body></html>

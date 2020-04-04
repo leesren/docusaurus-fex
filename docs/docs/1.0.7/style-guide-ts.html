@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>TypeScript · 前端技术文档库</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="**JavaScript 的超集。**"/><meta name="docsearch:version" content="1.0.7"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="TypeScript · 前端技术文档库"/><meta property="og:type" content="website"/><meta property="og:url" content="https://leesren.github.io/docusaurus-fex/"/><meta property="og:description" content="**JavaScript 的超集。**"/><meta property="og:image" content="https://leesren.github.io/docusaurus-fex/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/docusaurus-fex/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://leesren.github.io/docusaurus-fex/blog/atom.xml" title="前端技术文档库 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://leesren.github.io/docusaurus-fex/blog/feed.xml" title="前端技术文档库 Blog RSS Feed"/><script type="text/javascript" src="/docusaurus-fex//js/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/docusaurus-fex//js/code-blocks-buttons.js"></script><script src="/docusaurus-fex/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-fex/css/prism.css"/><link rel="stylesheet" href="/docusaurus-fex/css/main.css"/><script src="/docusaurus-fex/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-fex/"><img class="logo" src="/docusaurus-fex/img/favicon.ico" alt="前端技术文档库"/><h2 class="headerTitleWithLogo">前端技术文档库</h2></a><a href="/docusaurus-fex/versions"><h3>1.0.7</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class="siteNavGroupActive"><a href="/docusaurus-fex/docs/1.0.7/start" target="_self">快速开始</a></li><li class=""><a href="/docusaurus-fex/docs/1.0.7/doc4" target="_self">API</a></li><li class=""><a href="/docusaurus-fex/help" target="_self">Help</a></li><li class=""><a href="/docusaurus-fex/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>扩展阅读</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">关于规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/start">快速上手</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/restructure-frontend-rules-choice">重构答疑</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/restructure-frontend-shape-screen">游戏内异形屏适配规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/restructure-frontend-rules-html">HTML 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/restructure-frontend-rules-css">CSS 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/restructure-frontend-rules-js">Javascript 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/restructure-frontend-rules-vue">Vue.js 组件编码规范</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">页面规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide">页面规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-header">页面头部</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-css">CSS 规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-name">注释与命名</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-dir">文件目录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-img">图片处理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-sta">数据统计</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----PC端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-pc-compatible">浏览器兼容</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-pc-share">页面分享</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----移动端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-mobile-design">移动端页面设计规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-mobile-font">移动端页面字体使用参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-mobile-rem">rem 布局</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-mobile-compatible">移动端页面兼容要求</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/page-guide-mobile-media">移动端 H5 页面音频/视频规范</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">工具/系统<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/tools">常用工具/参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/cdn">常用 JS 库 CDN</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/img-press">图片压缩工具</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">特殊规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/spec-concheck">页面内容检查</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/spec-version">版本管理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/code-review">代码健壮</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">扩展阅读<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/reading-more">拓展阅读</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/safe">WEB 前端页面安全指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/performance">移动端页面性能优化指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/viewport">视口（viewport）基础知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/mobile-response">移动端页面适配知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/mobile-event">移动端事件介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/style-guide-airbnb-js">Airbnb JavaScript 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/style-guide-react">React 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/style-guide-vue2">Vue 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/style-guide-angular">Angular - 风格指南</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/style-guide-ts">TypeScript</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/style-guide-You-Dont-Know-JS">你不懂 JS（系列丛书）【中文】</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/style-guide-cache">缓存</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/style-guide-chrome-devtools">Chrome 开发者工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/style-guide-input">输入框问题</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/style-guide-error">错误监控</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端导航<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/fe-nav">前端导航</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端监控<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/monitor/intro">产品介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/monitor/start">快速开始</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/monitor/usage">用户使用手册</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/monitor/advance">高级选项</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/monitor/faq">FAQ</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">技巧<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/tips/frame">帧率调节</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/tips/speedup">加速减速</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/tips/array">数组</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/tips/task">任务队列</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/tips/css-tips">CSS 技巧</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">业务<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/business/ArrayBuffer">ArrayBuffer 工具类</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/business/enums">枚举类型 enums</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/business/exception">自定义 Exception</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/business/fs">Node fs 模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/business/http">Http 相关</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/business/node-tips">Node 记录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/business/nodejs">Node 常用扩展模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/business/nodejs2">Node 常用扩展模块 2</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/business/utils">常用工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/business/validators">validators 表单验证</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/business/vue">Vue 记录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.7/business/react">React 知识汇总</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">TypeScript</h1></header><article><div><span><p><strong>JavaScript 的超集。</strong></p>
+<p>TypeScript 是 JavaScript 类型的超集，它可以编译成纯 JavaScript。</p>
+<ul>
+<li><strong>始于 JavaScript，归于 JavaScript</strong></li>
+</ul>
+<blockquote>
+<p>TypeScript 从今天数以百万计的 JavaScript 开发者所熟悉的语法和语义开始。使用现有的 JavaScript 代码，包括流行的 JavaScript 库，并从 JavaScript 代码中调用 TypeScript 代码。</p>
+</blockquote>
+<blockquote>
+<p>TypeScript 可以编译出纯净、 简洁的 JavaScript 代码，并且可以运行在任何浏览器上、Node.js 环境中和任何支持 ECMAScript 3（或更高版本）的 JavaScript 引擎中。</p>
+</blockquote>
+<ul>
+<li><strong>强大的工具构建 大型应用程序</strong></li>
+</ul>
+<blockquote>
+<p>类型允许 JavaScript 开发者在开发 JavaScript 应用程序时使用高效的开发工具和常用操作比如静态检查和代码重构。</p>
+</blockquote>
+<blockquote>
+<p>类型是可选的，类型推断让一些类型的注释使你的代码的静态验证有很大的不同。类型让你定义软件组件之间的接口和洞察现有 JavaScript 库的行为。</p>
+</blockquote>
+<ul>
+<li><strong>先进的 JavaScript</strong></li>
+</ul>
+<blockquote>
+<p>TypeScript 提供最新的和不断发展的 JavaScript 特性，包括那些来自 2015 年的 ECMAScript 和未来的提案中的特性，比如异步功能和 Decorators，以帮助建立健壮的组件。</p>
+</blockquote>
+<blockquote>
+<p>这些特性为高可信应用程序开发时是可用的，但是会被编译成简洁的 ECMAScript3（或更新版本）的 JavaScript。</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="keyof"></a><a href="#keyof" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>keyof</h2>
+<p><code>keyof</code>  和 <code>Object.key</code>  很像，只不过 <code>keyof</code>  取的是 <code>interface</code> 、 <code>object</code> 、 <code>class</code>  等的值</p>
+<pre><code class="hljs css language-typescript"><span class="hljs-keyword">interface</span> Point {
+  x: <span class="hljs-built_in">number</span>;
+  y: <span class="hljs-built_in">number</span>;
+}
+<span class="hljs-keyword">type</span> keys = keyof Point; <span class="hljs-comment">// type keys = "x"|"y"</span>
+</code></pre>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/119906/1562833004272-cb7d3c17-5a43-44d3-a337-250fb523962e.png" alt=""></p>
+<h2><a class="anchor" aria-hidden="true" id="typeof"></a><a href="#typeof" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>typeof</h2>
+<p>typeof 代表取某个值的 type，可以从以下示例来展示他们的用法：</p>
+<pre><code class="hljs css language-typescript"><span class="hljs-keyword">const</span> a: <span class="hljs-built_in">number</span> = <span class="hljs-number">3</span>;
+<span class="hljs-comment">// 相当于: const b: number = 4</span>
+<span class="hljs-keyword">const</span> b: <span class="hljs-keyword">typeof</span> a = <span class="hljs-number">4</span>;
+
+<span class="hljs-comment">// 不知道具体的类型情况</span>
+<span class="hljs-keyword">import</span> logger <span class="hljs-keyword">from</span> <span class="hljs-string">'./logger'</span>;
+<span class="hljs-keyword">import</span> utils <span class="hljs-keyword">from</span> <span class="hljs-string">'./utils'</span>;
+<span class="hljs-keyword">interface</span> Context <span class="hljs-keyword">extends</span> KoaContect {
+  logger: <span class="hljs-keyword">typeof</span> logger;
+  utils: <span class="hljs-keyword">typeof</span> utils;
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="keyof--typeof"></a><a href="#keyof--typeof" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>keyof &amp; typeof</h3>
+<pre><code class="hljs css language-typescript"><span class="hljs-keyword">const</span> colors = {
+  red: <span class="hljs-string">'#00ffff'</span>,
+  blue: <span class="hljs-string">'#ff00ff'</span>
+};
+
+<span class="hljs-keyword">type</span> Colors = keyof <span class="hljs-keyword">typeof</span> colors;
+
+<span class="hljs-keyword">let</span> color: Colors; <span class="hljs-comment">// color 的类型是 'red' | 'blue'</span>
+color = <span class="hljs-string">'red'</span>; <span class="hljs-comment">// ok</span>
+color = <span class="hljs-string">'blue'</span>; <span class="hljs-comment">// ok</span>
+color = <span class="hljs-string">'something else '</span>; <span class="hljs-comment">// error</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="partial--pick"></a><a href="#partial--pick" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Partial &amp; Pick</h2>
+<p>Partial 部分可选属性，Pick 指定的属性
+<img src="https://cdn.nlark.com/yuque/0/2019/png/119906/1562833195230-66acb143-d8cd-4815-ab79-16a9061a6e3b.png#align=left&amp;display=inline&amp;height=234&amp;name=image.png&amp;originHeight=234&amp;originWidth=704&amp;size=27989&amp;status=done&amp;width=704" alt="">
+<img src="https://cdn.nlark.com/yuque/0/2019/png/119906/1562833259492-55abc7f5-ee54-4523-99a0-e4f4c502fdb4.png#align=left&amp;display=inline&amp;height=135&amp;name=image.png&amp;originHeight=135&amp;originWidth=703&amp;size=16270&amp;status=done&amp;width=703" alt=""></p>
+<pre><code class="hljs css language-jsx"><span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>PureComponent</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Props</span></span><span class="token punctuation">></span></span><span class="token plain-text"> </span><span class="token punctuation">{</span>
+  defaultProps<span class="token operator">:</span> Partial<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Props</span></span><span class="token punctuation">></span></span><span class="token plain-text"> = </span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token plain-text">;
+}
+</span></code></pre>
+<h2><a class="anchor" aria-hidden="true" id="exclude--extract"></a><a href="#exclude--extract" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Exclude &amp; Extract</h2>
+<p>Exclude from T those types that are assignable to U。从 T 中排除那些可分配给 U 的类型
+<code>Extract</code> :
+Extract from T those types that are assignable to U
+从 T 中提取可分配给 U 的类型</p>
+<p>在 ts 2.8 中引入了一个条件类型, 示例如下
+T extends U ? X : Y
+对于联合类型来说会自动分发条件，例如 T extends U ? X : Y, T 可能是 A | B 的联合类型, 那实际情况就变成(A extends U ? X : Y) | (B extends U ? X : Y)
+以上语句的意思就是 如果 T 是 U 的子类型的话，那么就会返回 X，否则返回 Y
+type Exclude&lt;T, U&gt; = T extends U ? never : T;</p>
+<pre><code class="hljs css language-typescript"><span class="hljs-comment">// 源码</span>
+<span class="hljs-keyword">type</span> Exclude&lt;T, U&gt; = T <span class="hljs-keyword">extends</span> U ? never : T;
+<span class="hljs-comment">// T extends U ? X : Y</span>
+<span class="hljs-comment">// 对于联合类型来说会自动分发条件，例如 T extends U ? X : Y, T 可能是 A | B 的联合类型, 那实际情况就变成(A extends U ? X : Y) | (B extends U ? X : Y)</span>
+<span class="hljs-comment">// 以上语句的意思就是 如果 T 是 U 的子类型的话，那么就会返回 X，否则返回 Y</span>
+
+<span class="hljs-comment">// # Exclude</span>
+<span class="hljs-keyword">type</span> T00 = Exclude&lt;<span class="hljs-string">'a'</span> | <span class="hljs-string">'b'</span> | <span class="hljs-string">'c'</span> | <span class="hljs-string">'d'</span>, <span class="hljs-string">'a'</span> | <span class="hljs-string">'c'</span> | <span class="hljs-string">'f'</span>&gt;; <span class="hljs-comment">// "b" | "d"</span>
+<span class="hljs-keyword">type</span> TypeName&lt;T&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">string</span>
+  ? <span class="hljs-string">'string'</span>
+  : T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">number</span>
+  ? <span class="hljs-string">'number'</span>
+  : T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">boolean</span>
+  ? <span class="hljs-string">'boolean'</span>
+  : T <span class="hljs-keyword">extends</span> <span class="hljs-literal">undefined</span>
+  ? <span class="hljs-string">'undefined'</span>
+  : T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">Function</span>
+  ? <span class="hljs-string">'function'</span>
+  : <span class="hljs-string">'object'</span>;
+<span class="hljs-keyword">const</span> typeName: TypeName&lt;<span class="hljs-number">1</span>&gt; = <span class="hljs-string">'number'</span>; <span class="hljs-comment">// 指定类型名称</span>
+
+<span class="hljs-keyword">type</span> T004 = Exclude&lt;
+  { isLoading: <span class="hljs-built_in">boolean</span> },
+  { name: <span class="hljs-built_in">string</span>; age: <span class="hljs-built_in">number</span>; isLoading: <span class="hljs-built_in">boolean</span> }
+&gt;; <span class="hljs-comment">// { isLoading: boolean}</span>
+
+<span class="hljs-keyword">type</span> T006 = Exclude&lt;
+  { name: <span class="hljs-built_in">string</span>; age: <span class="hljs-built_in">number</span>; isLoading: <span class="hljs-built_in">boolean</span> },
+  { isLoading: <span class="hljs-built_in">boolean</span> }
+&gt;; <span class="hljs-comment">// never</span>
+
+<span class="hljs-keyword">type</span> T005 = Extract&lt;
+  { isLoading: <span class="hljs-built_in">boolean</span> },
+  { name: <span class="hljs-built_in">string</span>; age: <span class="hljs-built_in">number</span>; isLoading: <span class="hljs-built_in">boolean</span> }
+&gt;; <span class="hljs-comment">// never</span>
+<span class="hljs-keyword">type</span> T007 = Extract&lt;
+  { name: <span class="hljs-built_in">string</span>; age: <span class="hljs-built_in">number</span>; isLoading: <span class="hljs-built_in">boolean</span> },
+  { isLoading: <span class="hljs-built_in">boolean</span> }
+&gt;; <span class="hljs-comment">// { name: string; age: number; isLoading: boolean }</span>
+
+<span class="hljs-comment">// # Extract</span>
+<span class="hljs-keyword">type</span> T01 = Extract&lt;<span class="hljs-string">'a'</span> | <span class="hljs-string">'b'</span> | <span class="hljs-string">'c'</span> | <span class="hljs-string">'d'</span>, <span class="hljs-string">'a'</span> | <span class="hljs-string">'c'</span> | <span class="hljs-string">'f'</span>&gt;; <span class="hljs-comment">// "a" | "c"</span>
+
+<span class="hljs-keyword">type</span> T00 = Exclude&lt;<span class="hljs-string">'a'</span> | <span class="hljs-string">'b'</span> | <span class="hljs-string">'c'</span> | <span class="hljs-string">'d'</span>, <span class="hljs-string">'a'</span> | <span class="hljs-string">'c'</span> | <span class="hljs-string">'f'</span>&gt;; <span class="hljs-comment">// "b" | "d"</span>
+<span class="hljs-keyword">type</span> T01 = Extract&lt;<span class="hljs-string">'a'</span> | <span class="hljs-string">'b'</span> | <span class="hljs-string">'c'</span> | <span class="hljs-string">'d'</span>, <span class="hljs-string">'a'</span> | <span class="hljs-string">'c'</span> | <span class="hljs-string">'f'</span>&gt;; <span class="hljs-comment">// "a" | "c"</span>
+
+<span class="hljs-keyword">type</span> T02 = Exclude&lt;<span class="hljs-built_in">string</span> | <span class="hljs-built_in">number</span> | <span class="hljs-function">(<span class="hljs-params">(<span class="hljs-params"></span>) =&gt; <span class="hljs-built_in">void</span></span>), <span class="hljs-params">Function</span>&gt;; // <span class="hljs-params">string</span> | <span class="hljs-params">number</span>
+<span class="hljs-params">type</span> <span class="hljs-params">T03</span> = <span class="hljs-params">Extract</span>&lt;<span class="hljs-params">string</span> | <span class="hljs-params">number</span> | (<span class="hljs-params">(<span class="hljs-params"></span>) =&gt; <span class="hljs-built_in">void</span></span>), <span class="hljs-params">Function</span>&gt;; // <span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">void</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="omit-未包含"></a><a href="#omit-未包含" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Omit 未包含</h2>
+<p>用之前的 Pick 和 Exclude 进行组合, 实现忽略对象某些属性功能, 源码如下</p>
+<pre><code class="hljs css language-typescript"><span class="hljs-keyword">type</span> Foo2 = Omit&lt;{ name: <span class="hljs-built_in">string</span>; age: <span class="hljs-built_in">number</span> }, <span class="hljs-string">'name'</span>&gt;; <span class="hljs-comment">// -&gt; { age: number }</span>
+
+<span class="hljs-keyword">interface</span> User {
+  id: <span class="hljs-built_in">number</span>;
+  age: <span class="hljs-built_in">number</span>;
+  name: <span class="hljs-built_in">string</span>;
+}
+<span class="hljs-comment">// 相当于: type PickUser = { age: number; name: string; }</span>
+<span class="hljs-keyword">type</span> OmitUser = Omit&lt;User, <span class="hljs-string">'id'</span>&gt;;
+</code></pre>
+<p>**在高阶组件属性的使用 **</p>
+<pre><code class="hljs css language-jsx"><span class="token comment">// 在高阶组件比较常用。</span>
+<span class="token keyword">interface</span> <span class="token class-name">ButtonProps</span> <span class="token punctuation">{</span>
+  color<span class="token operator">:</span> string<span class="token punctuation">;</span>
+  size<span class="token operator">:</span> number<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">Button</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">ButtonProps</span></span><span class="token punctuation">></span></span><span class="token plain-text"> </span><span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token plain-text">
+type BigButtonProps = Omit&lt;ButtonProps, 'size'>;
+const BigButton = (props: BigButtonProps) => </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span> <span class="token attr-name">size</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span><span class="token number">12</span><span class="token punctuation">}</span></span> <span class="token spread"><span class="token punctuation">{</span><span class="token punctuation">...</span><span class="token attr-value">props</span><span class="token punctuation">}</span></span> <span class="token punctuation">/></span></span><span class="token plain-text">;
+</span></code></pre>
+<h2><a class="anchor" aria-hidden="true" id="资源"></a><a href="#资源" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>资源</h2>
+<ul>
+<li><a href="https://www.tslang.cn/docs/home.html">中文 文档</a></li>
+<li><a href="https://github.com/piotrwitek/react-redux-typescript-guide">react-redux-typescript-guide</a></li>
+<li><a href="https://github.com/typescript-cheatsheets">typescript-cheatsheets</a></li>
+<li><a href="https://jkchao.github.io/typescript-book-chinese/#why">深入理解 TypeScript</a></li>
+<li><a href="https://www.yuque.com/leesren/ee7xk6/wqwt6b">TypeScript 高级</a></li>
+<li><a href="https://juejin.im/post/5b07caf16fb9a07aa83f2977#heading-11">TypeScript 2.8 下的终极 React 组件模式</a></li>
+</ul>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-10-9 by 岑少任</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-fex/docs/1.0.7/style-guide-angular"><span class="arrow-prev">← </span><span>Angular - 风格指南</span></a><a class="docs-next button" href="/docusaurus-fex/docs/1.0.7/style-guide-You-Dont-Know-JS"><span>你不懂 JS（系列丛书）【中文】</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#keyof">keyof</a></li><li><a href="#typeof">typeof</a><ul class="toc-headings"><li><a href="#keyof--typeof">keyof &amp; typeof</a></li></ul></li><li><a href="#partial--pick">Partial &amp; Pick</a></li><li><a href="#exclude--extract">Exclude &amp; Extract</a></li><li><a href="#omit-未包含">Omit 未包含</a></li><li><a href="#资源">资源</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-fex/" class="nav-home"><img src="/docusaurus-fex/img/logo.png" alt="前端技术文档库" width="48" height="48" style="max-width:initial"/></a><div><h5>Docs</h5><a href="/docusaurus-fex/docs/en/start.html">快速开始</a><a href="/docusaurus-fex/docs/en/page-guide.html">查看规范</a><a href="/docusaurus-fex/docs/en/reading-more.html">拓展阅读</a></div><div><h5>Community</h5><a href="/docusaurus-fex/en/users.html">User Showcase</a><a href="/docusaurus-fex/en/business.html">business</a></div><div><h5>More</h5><a href="/docusaurus-fex/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docusaurus-fex/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/><section class="copyright">Copyright © 2020 友点科技</section></a></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '3eb9507824b8be89e7a199ecaa1a9d2c',
+                indexName: 'docusaurus',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {"facetFilters":["language:en","version:1.0.7"]}
+              });
+            </script></body></html>

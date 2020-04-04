@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Javascript 编码规范 · 前端技术文档库</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="- 使用 UTF-8 编码来保存文件。"/><meta name="docsearch:version" content="next"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Javascript 编码规范 · 前端技术文档库"/><meta property="og:type" content="website"/><meta property="og:url" content="https://leesren.github.io/docusaurus-fex/"/><meta property="og:description" content="- 使用 UTF-8 编码来保存文件。"/><meta property="og:image" content="https://leesren.github.io/docusaurus-fex/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/docusaurus-fex/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://leesren.github.io/docusaurus-fex/blog/atom.xml" title="前端技术文档库 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://leesren.github.io/docusaurus-fex/blog/feed.xml" title="前端技术文档库 Blog RSS Feed"/><script type="text/javascript" src="/docusaurus-fex//js/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/docusaurus-fex//js/code-blocks-buttons.js"></script><script src="/docusaurus-fex/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-fex/css/prism.css"/><link rel="stylesheet" href="/docusaurus-fex/css/main.css"/><script src="/docusaurus-fex/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-fex/"><img class="logo" src="/docusaurus-fex/img/favicon.ico" alt="前端技术文档库"/><h2 class="headerTitleWithLogo">前端技术文档库</h2></a><a href="/docusaurus-fex/versions"><h3>next</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class="siteNavGroupActive"><a href="/docusaurus-fex/docs/next/start" target="_self">快速开始</a></li><li class=""><a href="/docusaurus-fex/docs/next/doc4" target="_self">API</a></li><li class=""><a href="/docusaurus-fex/help" target="_self">Help</a></li><li class=""><a href="/docusaurus-fex/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>关于规范</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">关于规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/start">快速上手</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/restructure-frontend-rules-choice">重构答疑</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/restructure-frontend-shape-screen">游戏内异形屏适配规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/restructure-frontend-rules-html">HTML 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/restructure-frontend-rules-css">CSS 编码规范</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-fex/docs/next/restructure-frontend-rules-js">Javascript 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/restructure-frontend-rules-vue">Vue.js 组件编码规范</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">页面规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide">页面规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-header">页面头部</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-css">CSS 规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-name">注释与命名</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-dir">文件目录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-img">图片处理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-sta">数据统计</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----PC端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-pc-compatible">浏览器兼容</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-pc-share">页面分享</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----移动端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-mobile-design">移动端页面设计规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-mobile-font">移动端页面字体使用参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-mobile-rem">rem 布局</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-mobile-compatible">移动端页面兼容要求</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/page-guide-mobile-media">移动端 H5 页面音频/视频规范</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">工具/系统<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/tools">常用工具/参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/cdn">常用 JS 库 CDN</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/img-press">图片压缩工具</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">特殊规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/spec-concheck">页面内容检查</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/spec-version">版本管理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/code-review">代码健壮</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">扩展阅读<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/reading-more">拓展阅读</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/safe">WEB 前端页面安全指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/performance">移动端页面性能优化指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/viewport">视口（viewport）基础知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/mobile-response">移动端页面适配知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/mobile-event">移动端事件介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/style-guide-airbnb-js">Airbnb JavaScript 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/style-guide-react">React 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/style-guide-vue2">Vue 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/style-guide-angular">Angular - 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/style-guide-ts">TypeScript</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/style-guide-You-Dont-Know-JS">你不懂 JS（系列丛书）【中文】</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/style-guide-cache">缓存</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/style-guide-chrome-devtools">Chrome 开发者工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/style-guide-input">输入框问题</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/style-guide-error">错误监控</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端导航<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/fe-nav">前端导航</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端监控<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/monitor/intro">产品介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/monitor/start">快速开始</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/monitor/usage">用户使用手册</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/monitor/advance">高级选项</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/monitor/faq">FAQ</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">更新日志<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/change-log">change-log</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">技巧<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/tips/frame">帧率调节</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/tips/speedup">加速减速</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/tips/array">数组</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/tips/task">任务队列</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/tips/css-tips">CSS 技巧</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">业务<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/business/ArrayBuffer">ArrayBuffer 工具类</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/business/enums">枚举类型 enums</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/business/exception">自定义 Exception</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/business/fs">Node fs 模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/business/http">Http 相关</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/business/node-tips">Node 记录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/business/nodejs">Node 常用扩展模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/business/nodejs2">Node 常用扩展模块 2</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/business/utils">常用工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/business/validators">validators 表单验证</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/business/vue">Vue 记录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/next/business/react">React 知识汇总</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Javascript 编码规范</h1></header><article><div><span><ul>
+<li><p>使用 UTF-8 编码来保存文件。</p></li>
+<li><p>总是使用 var 声明变量， 变量命名规范使用驼峰式（variableNamesLikeThis）,当命名构造函数或类时使用驼峰式的大写，有意义的变量名，多个变量声明用逗号隔开，将变量声明放在当前环境作用域开始的地方(function 的最上面)，比如：</p></li>
+</ul>
+<pre><code class="hljs css language-js">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+   <span class="hljs-keyword">var</span> btnExample,
+        ... ...  ,    <span class="hljs-comment">//其他变量</span>
+        something,
+        variableNamesLikeThis,
+        btnTest;
+   <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">User</span>(<span class="hljs-params">name</span>)</span>{
+ <span class="hljs-keyword">this</span>.name = name;
+   }
+   <span class="hljs-keyword">if</span> (something) {
+      <span class="hljs-comment">// ...</span>
+   } <span class="hljs-keyword">else</span> {
+      <span class="hljs-comment">// ...</span>
+   }
+})()
+</code></pre>
+<ul>
+<li>Javascript 没有块级作用域，不要在块内声明一个函数</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-comment">//错误的写法</span>
+
+<span class="hljs-keyword">if</span> (x) {
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{}
+}
+<span class="hljs-comment">//正确的写法</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{}
+<span class="hljs-keyword">if</span> (x) {
+}
+</code></pre>
+<ul>
+<li><p>每个表达式语句后面加分号。</p></li>
+<li><p>优先使用单引号(‘)于双引号(“)，因为字符串可能包含 HTML 代码, 比如：</p></li>
+</ul>
+<pre><code class="hljs css language-js">var test = ‘&lt;span class=”example”&gt;&lt;/span&gt;’;
+</code></pre>
+<ul>
+<li>操作符两端添加空格</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>,
+  b = <span class="hljs-number">2</span>;
+<span class="hljs-keyword">if</span> (a &gt; b) {
+  <span class="hljs-comment">//do some thing</span>
+}
+</code></pre>
+<ul>
+<li>不要使用 with- 对象和数组的初始化直接使用{}，[]</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> a = {},
+  b = [];
+</code></pre>
+<ul>
+<li>注释</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-comment">/**
+ * foo函数描述
+ * <span class="hljs-doctag">@type <span class="hljs-type">{number}</span> </span>类型
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">type</span>) </span>{
+  <span class="hljs-comment">//do some thing</span>
+}
+</code></pre>
+<ul>
+<li><p>eval 尽量不用。只用于解析序列化串(最好用 JSON 的 JSON.parse()来替代 eval()), eval() 会让程序执行的比较混乱, 当 eval() 里面包含用户输入的话就更加危险.可以用其他更佳的, 更清晰, 更安全的方式写你的代码,</p></li>
+<li><p>for-in 只用于 object/map/hash 的遍历</p></li>
+</ul>
+<ul>
+<li>尽量避免修改内置对象的原型，或在内置对象原型添加方法（Date, Object,Array ,String 等等）
+//避免修改内置对象的原型</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-built_in">Date</span>.prototype.addDay = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">days</span>)</span>{
+......
+}
+</code></pre>
+<ul>
+<li>空行：方法之间加，单行或多行注释前加，逻辑块之间加空行增加可读性- 避免额外的逗号。</li>
+</ul>
+<p>如：<code>var arr = [1,2,3,];</code></p>
+<ul>
+<li>所有的循环体和判断体都需要用 {}括起来</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">if</span>(a){
+...
+}
+</code></pre>
+<ul>
+<li>不要把参数命名为 arguments, 这将会覆盖函数作用域内传过来的 arguments 对象</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-comment">// bad</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">name, options, arguments</span>) </span>{
+  <span class="hljs-comment">// ...do some thing...</span>
+}
+
+<span class="hljs-comment">// good</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params">name, options, args</span>) </span>{
+  <span class="hljs-comment">// ...do some thing...</span>
+}
+</code></pre>
+<ul>
+<li>Javascript 继承使用寄生组合式继承：通过借用构造函数来继承属性,通过原型链形式来继承方法。</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inheritPrototype</span>(<span class="hljs-params">subType, superType</span>) </span>{
+  <span class="hljs-keyword">var</span> F = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{};
+  F.prototype = superType.prototype;
+  subType.prototype = <span class="hljs-keyword">new</span> F(); <span class="hljs-comment">//创建父类原型的一个副本，将创建的对象(副本)赋值给子类的原型</span>
+  <span class="hljs-comment">//高级浏览器可以直接用Object.create(superType.prototype)</span>
+  subType.constructor = subType;
+}
+
+<span class="hljs-comment">/*
+ *超类
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">SuperType</span>(<span class="hljs-params">name</span>) </span>{
+  <span class="hljs-keyword">this</span>.name = name;
+  <span class="hljs-keyword">this</span>.friends = [<span class="hljs-string">'gay1'</span>, <span class="hljs-string">'gay2'</span>];
+}
+SuperType.prototype.sayName = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  alert(<span class="hljs-keyword">this</span>.name);
+};
+
+<span class="hljs-comment">/*
+ *子类
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">SubType</span>(<span class="hljs-params">name, age</span>) </span>{
+  SuperType.call(<span class="hljs-keyword">this</span>, name); <span class="hljs-comment">//继承SuperType的属性</span>
+  <span class="hljs-keyword">this</span>.age = age; <span class="hljs-comment">//扩展出age属性</span>
+}
+inheritPrototype(SubType, SuperType);
+SubType.prototype.sayAge = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  alert(<span class="hljs-keyword">this</span>.age);
+}; <span class="hljs-comment">//扩展出sayAge方法</span>
+</code></pre>
+<ul>
+<li><code>&quot;use strict&quot;</code> (ECMAscript 5 声明)在函数内使用，放在函数的第一行，使得 Javascript 在更严格的条件下运行， 增加运行速度。</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-string">'use strict'</span>;
+  a = <span class="hljs-number">123</span>; <span class="hljs-comment">//严格模式下直接报错 a 未声明</span>
+}
+</code></pre>
+<ul>
+<li>缓存局部变量，根据作用域链的特性局部变量访问是最快的。在编写代码的时候应尽量少使用全局变量，尽可能使用局部变量</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>)</span>{
+    ...
+    var changeColor = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+       <span class="hljs-keyword">var</span> doc=<span class="hljs-built_in">document</span>;
+        doc.getElementById(<span class="hljs-string">"test"</span>).onclick=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            doc.getElementById(<span class="hljs-string">"test"</span>).style.backgroundColor=<span class="hljs-string">"red"</span>;
+        };
+    }
+}
+</code></pre>
+<ul>
+<li>事件绑定，对于列表的事件绑定使用事件委托</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-comment">//bad</span>
+$(‘ul li’).on(‘click’, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{  ... });
+
+<span class="hljs-comment">//good</span>
+$(‘ul’).on(‘click’, ‘li’ <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{  ... });
+</code></pre>
+<ul>
+<li><p>使用 require 或 seajs 模块化管理 javascrit</p></li>
+<li><p>使用 html 模板库处理 html 字符串拼接</p></li>
+<li><p>使用 jslint 进行脚步检测 比如：<a href="http://www.jslint.com/">http://www.jslint.com/</a></p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="开发性能规范"></a><a href="#开发性能规范" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>开发性能规范</h2>
+<ul>
+<li><p>减少 http 请求，</p></li>
+<li><p>使用外部 javascript 和 CSS 充分利用缓存</p></li>
+<li><p>考虑把大图切成多张小图，常见在 banner 图过大的场景</p></li>
+<li><p>高端浏览器数据离线化，考虑将数据缓存在 localStorage</p></li>
+<li><p>图片使用 CSS Sprites 或 DATAURI</p></li>
+<li><p>外链 CSS 中避免 @import 引入，避免使用 css 表达式</p></li>
+<li><p>避免打包大型类库</p></li>
+<li><p>初始首屏之外的图片资源可考虑延迟加载</p></li>
+<li><p>单页面应用(SPA)考虑延迟加载非首屏业务模块</p></li>
+<li><p>尽量使用 CSS3 代替图片 icon、使用 CSS3 动画代替 JS 动画，低端浏览器可以考虑降级处理</p></li>
+<li><p>缓存 DOM 选择与计算</p></li>
+<li><p>减少触发页面重绘的操作</p></li>
+<li><p>尽可能使用事件代理，避免批量绑定事件</p></li>
+<li><p>HTML 结构层级保持足够简单</p></li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="性能测试网站"></a><a href="#性能测试网站" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>性能测试网站</h2>
+<ul>
+<li><p>访问 <a href="http://developers.google.com/speed/pagespeed/insights/">Google PageSpeed</a></p></li>
+<li><p><a href="https://www.webpagetest.org/">webpagestest</a></p></li>
+</ul>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-10-9 by 岑少任</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-fex/docs/next/restructure-frontend-rules-css"><span class="arrow-prev">← </span><span>CSS 编码规范</span></a><a class="docs-next button" href="/docusaurus-fex/docs/next/restructure-frontend-rules-vue"><span>Vue.js 组件编码规范</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#开发性能规范">开发性能规范</a></li><li><a href="#性能测试网站">性能测试网站</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-fex/" class="nav-home"><img src="/docusaurus-fex/img/logo.png" alt="前端技术文档库" width="48" height="48" style="max-width:initial"/></a><div><h5>Docs</h5><a href="/docusaurus-fex/docs/en/start.html">快速开始</a><a href="/docusaurus-fex/docs/en/page-guide.html">查看规范</a><a href="/docusaurus-fex/docs/en/reading-more.html">拓展阅读</a></div><div><h5>Community</h5><a href="/docusaurus-fex/en/users.html">User Showcase</a><a href="/docusaurus-fex/en/business.html">business</a></div><div><h5>More</h5><a href="/docusaurus-fex/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docusaurus-fex/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/><section class="copyright">Copyright © 2020 友点科技</section></a></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '3eb9507824b8be89e7a199ecaa1a9d2c',
+                indexName: 'docusaurus',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {"facetFilters":["language:en","version:next"]}
+              });
+            </script></body></html>
