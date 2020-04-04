@@ -1,0 +1,647 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>常用工具 · 前端技术文档库</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="列举些常用的工具类"/><meta name="docsearch:version" content="1.0.8"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="常用工具 · 前端技术文档库"/><meta property="og:type" content="website"/><meta property="og:url" content="https://leesren.github.io/docusaurus-fex/"/><meta property="og:description" content="列举些常用的工具类"/><meta property="og:image" content="https://leesren.github.io/docusaurus-fex/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/docusaurus-fex/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://leesren.github.io/docusaurus-fex/blog/atom.xml" title="前端技术文档库 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://leesren.github.io/docusaurus-fex/blog/feed.xml" title="前端技术文档库 Blog RSS Feed"/><script type="text/javascript" src="/docusaurus-fex//js/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/docusaurus-fex//js/code-blocks-buttons.js"></script><script src="/docusaurus-fex/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-fex/css/prism.css"/><link rel="stylesheet" href="/docusaurus-fex/css/main.css"/><script src="/docusaurus-fex/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-fex/"><img class="logo" src="/docusaurus-fex/img/favicon.ico" alt="前端技术文档库"/><h2 class="headerTitleWithLogo">前端技术文档库</h2></a><a href="/docusaurus-fex/versions"><h3>1.0.8</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class="siteNavGroupActive"><a href="/docusaurus-fex/docs/1.0.8/start" target="_self">快速开始</a></li><li class=""><a href="/docusaurus-fex/docs/1.0.8/doc4" target="_self">API</a></li><li class=""><a href="/docusaurus-fex/help" target="_self">Help</a></li><li class=""><a href="/docusaurus-fex/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>业务</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">关于规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/start">快速上手</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/restructure-frontend-rules-choice">重构答疑</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/restructure-frontend-shape-screen">游戏内异形屏适配规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/restructure-frontend-rules-html">HTML 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/restructure-frontend-rules-css">CSS 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/restructure-frontend-rules-js">Javascript 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/restructure-frontend-rules-vue">Vue.js 组件编码规范</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">页面规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide">页面规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-header">页面头部</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-css">CSS 规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-name">注释与命名</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-dir">文件目录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-img">图片处理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-sta">数据统计</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----PC端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-pc-compatible">浏览器兼容</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-pc-share">页面分享</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----移动端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-mobile-design">移动端页面设计规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-mobile-font">移动端页面字体使用参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-mobile-rem">rem 布局</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-mobile-compatible">移动端页面兼容要求</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/page-guide-mobile-media">移动端 H5 页面音频/视频规范</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">工具/系统<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/tools">常用工具/参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/cdn">常用 JS 库 CDN</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/img-press">图片压缩工具</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">特殊规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/spec-concheck">页面内容检查</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/spec-version">版本管理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/code-review">代码健壮</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">扩展阅读<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/reading-more">拓展阅读</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/safe">WEB 前端页面安全指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/performance">移动端页面性能优化指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/viewport">视口（viewport）基础知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/mobile-response">移动端页面适配知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/mobile-event">移动端事件介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/style-guide-airbnb-js">Airbnb JavaScript 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/style-guide-react">React 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/style-guide-vue2">Vue 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/style-guide-angular">Angular - 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/style-guide-ts">TypeScript</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/style-guide-You-Dont-Know-JS">你不懂 JS（系列丛书）【中文】</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/style-guide-cache">缓存</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/style-guide-chrome-devtools">Chrome 开发者工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/style-guide-input">输入框问题</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/style-guide-error">错误监控</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端导航<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/fe-nav">前端导航</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端监控<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/monitor/intro">产品介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/monitor/start">快速开始</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/monitor/usage">用户使用手册</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/monitor/advance">高级选项</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/monitor/faq">FAQ</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">技巧<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/tips/frame">帧率调节</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/tips/speedup">加速减速</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/tips/array">数组</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/tips/task">任务队列</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/tips/css-tips">CSS 技巧</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">业务<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/business/ArrayBuffer">ArrayBuffer 工具类</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/business/enums">枚举类型 enums</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/business/exception">自定义 Exception</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/business/fs">Node fs 模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/business/http">Http 相关</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/business/node-tips">Node 记录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/business/nodejs">Node 常用扩展模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/business/nodejs2">Node 常用扩展模块 2</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/business/utils">常用工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/business/validators">validators 表单验证</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/business/vue">Vue 记录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.0.8/business/react">React 知识汇总</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">常用工具</h1></header><article><div><span><p>列举些常用的工具类</p>
+<h2><a class="anchor" aria-hidden="true" id="deepcopy-深拷贝"></a><a href="#deepcopy-深拷贝" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>deepCopy 深拷贝</h2>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">const</span> copySymbol = Symbol();
+
+<span class="hljs-comment">// tslint:disable-next-line:no-any</span>
+<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">deepCopy</span>&lt;<span class="hljs-title">T</span> <span class="hljs-title">extends</span> <span class="hljs-title">any</span>&gt;(<span class="hljs-params">value: T</span>): <span class="hljs-title">T</span> </span>{
+  <span class="hljs-keyword">if</span> (<span class="hljs-built_in">Array</span>.isArray(value)) {
+    <span class="hljs-keyword">return</span> value.map(<span class="hljs-function">(<span class="hljs-params">o: T</span>) =&gt;</span> deepCopy(o));
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (value &amp;&amp; <span class="hljs-keyword">typeof</span> value === <span class="hljs-string">'object'</span>) {
+    <span class="hljs-keyword">if</span> (value[copySymbol]) {
+      <span class="hljs-comment">// This is a circular dependency. Just return the cloned value.</span>
+      <span class="hljs-keyword">return</span> value[copySymbol];
+    }
+    <span class="hljs-keyword">if</span> (value[<span class="hljs-string">'toJSON'</span>]) {
+      <span class="hljs-keyword">return</span> <span class="hljs-built_in">JSON</span>.parse(<span class="hljs-function">(<span class="hljs-params">value['toJSON'] <span class="hljs-keyword">as</span> (<span class="hljs-params"></span>) =&gt; <span class="hljs-built_in">string</span></span>)<span class="hljs-params">()</span>);
+    }
+
+    <span class="hljs-params">const</span> <span class="hljs-params">copy</span> = <span class="hljs-params">new</span> (<span class="hljs-params"><span class="hljs-built_in">Object</span>.getPrototypeOf(<span class="hljs-params">value</span>)</span>).<span class="hljs-params">constructor</span><span class="hljs-params">()</span>;
+    <span class="hljs-params">value</span>[<span class="hljs-params">copySymbol</span>] = <span class="hljs-params">copy</span>;
+    <span class="hljs-params">for</span> (<span class="hljs-params"><span class="hljs-keyword">const</span> key of <span class="hljs-built_in">Object</span>.getOwnPropertyNames(<span class="hljs-params">value</span>)</span>) {
+      <span class="hljs-params">copy</span>[<span class="hljs-params">key</span>] = <span class="hljs-params">deepCopy</span>(<span class="hljs-params">value[key]</span>);
+    }
+    <span class="hljs-params">value</span>[<span class="hljs-params">copySymbol</span>] = <span class="hljs-params">undefined</span>;
+
+    <span class="hljs-params">return</span> <span class="hljs-params">copy</span>;
+  } <span class="hljs-params">else</span> {
+    <span class="hljs-params">return</span> <span class="hljs-params">value</span>;
+  }
+}
+</span></code></pre>
+<ul>
+<li>测试</li>
+</ul>
+<pre><code class="hljs css language-ts">describe(<span class="hljs-string">'object'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  describe(<span class="hljs-string">'deepCopy'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    it(<span class="hljs-string">'works with empty'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <span class="hljs-keyword">const</span> data = {};
+      expect(deepCopy(data)).toEqual(data);
+    });
+
+    it(<span class="hljs-string">'works with objects'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <span class="hljs-keyword">const</span> data = { a: <span class="hljs-number">1</span>, b: { c: <span class="hljs-string">'hello'</span> } };
+      expect(deepCopy(data)).toEqual(data);
+    });
+
+    it(<span class="hljs-string">'works with null'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <span class="hljs-keyword">const</span> data = <span class="hljs-literal">null</span>;
+      expect(deepCopy(data)).toEqual(data);
+    });
+
+    it(<span class="hljs-string">'works with number'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <span class="hljs-keyword">const</span> data = <span class="hljs-number">1</span>;
+      expect(deepCopy(data)).toEqual(data);
+    });
+
+    it(<span class="hljs-string">'works with simple classes'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <span class="hljs-keyword">class</span> Data {
+        <span class="hljs-keyword">constructor</span>(<span class="hljs-params"><span class="hljs-keyword">private</span> _x = 1, <span class="hljs-keyword">protected</span> _y = 2, <span class="hljs-keyword">public</span> _z = 3</span>) {}
+      }
+      <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">new</span> Data();
+      expect(deepCopy(data)).toEqual(data);
+      expect(deepCopy(data) <span class="hljs-keyword">instanceof</span> Data).toBe(<span class="hljs-literal">true</span>);
+    });
+
+    it(<span class="hljs-string">'works with circular objects'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+      <span class="hljs-keyword">const</span> data1 = { a: <span class="hljs-number">1</span> } <span class="hljs-keyword">as</span> <span class="hljs-built_in">any</span>;
+      <span class="hljs-keyword">const</span> data = { b: data1 };
+      data1[<span class="hljs-string">'circular'</span>] = data;
+
+      <span class="hljs-keyword">const</span> result = deepCopy(data) <span class="hljs-keyword">as</span> <span class="hljs-built_in">any</span>;
+      expect(result.b.a).toBe(<span class="hljs-number">1</span>);
+      expect(result.b.circular.b.a).toBe(<span class="hljs-number">1</span>);
+      expect(result.b).not.toBe(data1);
+      expect(result.b).toBe(result.b.circular.b);
+    });
+  });
+});
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="优先队列-priorityqueue"></a><a href="#优先队列-priorityqueue" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>优先队列 PriorityQueue</h2>
+<pre><code class="hljs css language-ts"><span class="hljs-comment">/** Naive priority queue; not intended for large datasets */</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> PriorityQueue&lt;T&gt; {
+  <span class="hljs-keyword">private</span> _items = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>&lt;T&gt;();
+
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params"><span class="hljs-keyword">private</span> _comparator: (x: T, y: T) =&gt; <span class="hljs-built_in">number</span></span>) {}
+
+  clear() {
+    <span class="hljs-keyword">this</span>._items = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>&lt;T&gt;();
+  }
+
+  push(item: T) {
+    <span class="hljs-keyword">const</span> index = <span class="hljs-keyword">this</span>._items.findIndex(
+      <span class="hljs-function"><span class="hljs-params">existing</span> =&gt;</span> <span class="hljs-keyword">this</span>._comparator(item, existing) &lt;= <span class="hljs-number">0</span>
+    );
+
+    <span class="hljs-keyword">if</span> (index === <span class="hljs-number">-1</span>) {
+      <span class="hljs-keyword">this</span>._items.push(item);
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">this</span>._items.splice(index, <span class="hljs-number">0</span>, item);
+    }
+  }
+
+  pop(): T | <span class="hljs-literal">undefined</span> {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._items.length === <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>;
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._items.splice(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>)[<span class="hljs-number">0</span>];
+  }
+
+  peek(): T | <span class="hljs-literal">undefined</span> {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._items.length === <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>;
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._items[<span class="hljs-number">0</span>];
+  }
+
+  <span class="hljs-keyword">get</span> size(): <span class="hljs-built_in">number</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._items.length;
+  }
+
+  toArray(): <span class="hljs-built_in">Array</span>&lt;T&gt; {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._items.slice();
+  }
+}
+</code></pre>
+<ul>
+<li><strong>测试</strong></li>
+</ul>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">const</span> queue = <span class="hljs-keyword">new</span> PriorityQueue&lt;<span class="hljs-built_in">number</span>&gt;<span class="hljs-function">(<span class="hljs-params">(<span class="hljs-params">x, y</span>) =&gt; x - y</span>);
+
+<span class="hljs-params">queue</span>.<span class="hljs-params">push</span>(<span class="hljs-params">99</span>);
+
+<span class="hljs-params">expect</span>(<span class="hljs-params">queue.size</span>).<span class="hljs-params">toBe</span>(<span class="hljs-params">1</span>);
+<span class="hljs-params">expect</span>(<span class="hljs-params">queue.peek(<span class="hljs-params"></span>)</span>).<span class="hljs-params">toBe</span>(<span class="hljs-params">99</span>);
+</span></code></pre>
+<h2><a class="anchor" aria-hidden="true" id="log-工具类"></a><a href="#log-工具类" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>log 工具类</h2>
+<p>简单日志处理类</p>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">import</span> {
+  Observable,
+  Operator,
+  PartialObserver,
+  Subject,
+  Subscription
+} <span class="hljs-keyword">from</span> <span class="hljs-string">'rxjs'</span>;
+
+<span class="hljs-keyword">interface</span> JsonObject {
+  [prop: <span class="hljs-built_in">string</span>]: <span class="hljs-built_in">any</span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> LoggerMetadata <span class="hljs-keyword">extends</span> JsonObject {
+  name: <span class="hljs-built_in">string</span>;
+  path: <span class="hljs-built_in">string</span>[];
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> LogEntry <span class="hljs-keyword">extends</span> LoggerMetadata {
+  level: LogLevel;
+  message: <span class="hljs-built_in">string</span>;
+  timestamp: <span class="hljs-built_in">number</span>;
+}
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> LoggerApi {
+  createChild(name: <span class="hljs-built_in">string</span>): Logger;
+  log(level: LogLevel, message: <span class="hljs-built_in">string</span>, metadata?: JsonObject): <span class="hljs-built_in">void</span>;
+  debug(message: <span class="hljs-built_in">string</span>, metadata?: JsonObject): <span class="hljs-built_in">void</span>;
+  info(message: <span class="hljs-built_in">string</span>, metadata?: JsonObject): <span class="hljs-built_in">void</span>;
+  warn(message: <span class="hljs-built_in">string</span>, metadata?: JsonObject): <span class="hljs-built_in">void</span>;
+  error(message: <span class="hljs-built_in">string</span>, metadata?: JsonObject): <span class="hljs-built_in">void</span>;
+  fatal(message: <span class="hljs-built_in">string</span>, metadata?: JsonObject): <span class="hljs-built_in">void</span>;
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">type</span> LogLevel = <span class="hljs-string">'debug'</span> | <span class="hljs-string">'info'</span> | <span class="hljs-string">'warn'</span> | <span class="hljs-string">'error'</span> | <span class="hljs-string">'fatal'</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> Logger <span class="hljs-keyword">extends</span> Observable&lt;LogEntry&gt; <span class="hljs-keyword">implements</span> LoggerApi {
+  <span class="hljs-keyword">protected</span> readonly _subject: Subject&lt;LogEntry&gt; = <span class="hljs-keyword">new</span> Subject&lt;LogEntry&gt;();
+  <span class="hljs-keyword">protected</span> _metadata: LoggerMetadata;
+
+  <span class="hljs-keyword">private</span> _obs: Observable&lt;LogEntry&gt;;
+  <span class="hljs-keyword">private</span> _subscription: Subscription | <span class="hljs-literal">null</span>;
+
+  <span class="hljs-keyword">protected</span> <span class="hljs-keyword">get</span> _observable() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._obs;
+  }
+  <span class="hljs-keyword">protected</span> <span class="hljs-keyword">set</span> _observable(v: Observable&lt;LogEntry&gt;) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._subscription) {
+      <span class="hljs-keyword">this</span>._subscription.unsubscribe();
+    }
+    <span class="hljs-keyword">this</span>._obs = v;
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.parent) {
+      <span class="hljs-keyword">this</span>._subscription = <span class="hljs-keyword">this</span>.subscribe(
+        <span class="hljs-function">(<span class="hljs-params">value: LogEntry</span>) =&gt;</span> {
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.parent) {
+            <span class="hljs-keyword">this</span>.parent._subject.next(value);
+          }
+        },
+        <span class="hljs-function">(<span class="hljs-params">error: <span class="hljs-built_in">Error</span></span>) =&gt;</span> {
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.parent) {
+            <span class="hljs-keyword">this</span>.parent._subject.error(error);
+          }
+        },
+        <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+          <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>._subscription) {
+            <span class="hljs-keyword">this</span>._subscription.unsubscribe();
+          }
+          <span class="hljs-keyword">this</span>._subscription = <span class="hljs-literal">null</span>;
+        }
+      );
+    }
+  }
+
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params">
+    <span class="hljs-keyword">public</span> readonly name: <span class="hljs-built_in">string</span>,
+    <span class="hljs-keyword">public</span> readonly parent: Logger | <span class="hljs-literal">null</span> = <span class="hljs-literal">null</span>
+  </span>) {
+    <span class="hljs-keyword">super</span>();
+
+    <span class="hljs-keyword">const</span> path: <span class="hljs-built_in">string</span>[] = [];
+    <span class="hljs-keyword">let</span> p = parent;
+    <span class="hljs-keyword">while</span> (p) {
+      path.push(p.name);
+      p = p.parent;
+    }
+    <span class="hljs-keyword">this</span>._metadata = { name, path };
+    <span class="hljs-keyword">this</span>._observable = <span class="hljs-keyword">this</span>._subject.asObservable();
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.parent &amp;&amp; <span class="hljs-keyword">this</span>.parent._subject) {
+      <span class="hljs-comment">// When the parent completes, complete us as well.</span>
+      <span class="hljs-keyword">this</span>.parent._subject.subscribe(<span class="hljs-literal">undefined</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span>
+        <span class="hljs-keyword">this</span>.complete()
+      );
+    }
+  }
+
+  asApi(): LoggerApi {
+    <span class="hljs-keyword">return</span> {
+      createChild: <span class="hljs-function">(<span class="hljs-params">name: <span class="hljs-built_in">string</span></span>) =&gt;</span> <span class="hljs-keyword">this</span>.createChild(name),
+      log: <span class="hljs-function">(<span class="hljs-params">level: LogLevel, message: <span class="hljs-built_in">string</span>, metadata?: JsonObject</span>) =&gt;</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.log(level, message, metadata);
+      },
+      debug: <span class="hljs-function">(<span class="hljs-params">message: <span class="hljs-built_in">string</span>, metadata?: JsonObject</span>) =&gt;</span>
+        <span class="hljs-keyword">this</span>.debug(message, metadata),
+      info: <span class="hljs-function">(<span class="hljs-params">message: <span class="hljs-built_in">string</span>, metadata?: JsonObject</span>) =&gt;</span>
+        <span class="hljs-keyword">this</span>.info(message, metadata),
+      warn: <span class="hljs-function">(<span class="hljs-params">message: <span class="hljs-built_in">string</span>, metadata?: JsonObject</span>) =&gt;</span>
+        <span class="hljs-keyword">this</span>.warn(message, metadata),
+      error: <span class="hljs-function">(<span class="hljs-params">message: <span class="hljs-built_in">string</span>, metadata?: JsonObject</span>) =&gt;</span>
+        <span class="hljs-keyword">this</span>.error(message, metadata),
+      fatal: <span class="hljs-function">(<span class="hljs-params">message: <span class="hljs-built_in">string</span>, metadata?: JsonObject</span>) =&gt;</span>
+        <span class="hljs-keyword">this</span>.fatal(message, metadata)
+    };
+  }
+
+  createChild(name: <span class="hljs-built_in">string</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> (<span class="hljs-keyword">this</span>.<span class="hljs-keyword">constructor</span> as typeof Logger)(<span class="hljs-params">name, <span class="hljs-keyword">this</span></span>);
+  }
+
+  complete() {
+    <span class="hljs-keyword">this</span>._subject.complete();
+  }
+
+  log(level: LogLevel, message: <span class="hljs-built_in">string</span>, metadata: JsonObject = {}): <span class="hljs-built_in">void</span> {
+    <span class="hljs-keyword">const</span> entry: LogEntry = <span class="hljs-built_in">Object</span>.assign({}, <span class="hljs-keyword">this</span>._metadata, metadata, {
+      level,
+      message,
+      timestamp: +<span class="hljs-built_in">Date</span>.now()
+    });
+    <span class="hljs-keyword">this</span>._subject.next(entry);
+  }
+
+  debug(message: <span class="hljs-built_in">string</span>, metadata: JsonObject = {}) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.log(<span class="hljs-string">'debug'</span>, message, metadata);
+  }
+  info(message: <span class="hljs-built_in">string</span>, metadata: JsonObject = {}) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.log(<span class="hljs-string">'info'</span>, message, metadata);
+  }
+  warn(message: <span class="hljs-built_in">string</span>, metadata: JsonObject = {}) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.log(<span class="hljs-string">'warn'</span>, message, metadata);
+  }
+  error(message: <span class="hljs-built_in">string</span>, metadata: JsonObject = {}) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.log(<span class="hljs-string">'error'</span>, message, metadata);
+  }
+  fatal(message: <span class="hljs-built_in">string</span>, metadata: JsonObject = {}) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.log(<span class="hljs-string">'fatal'</span>, message, metadata);
+  }
+
+  toString() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">`&lt;Logger(<span class="hljs-subst">${<span class="hljs-keyword">this</span>.name}</span>)&gt;`</span>;
+  }
+
+  lift&lt;R&gt;(operator: Operator&lt;LogEntry, R&gt;): Observable&lt;R&gt; {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._observable.lift(operator);
+  }
+
+  subscribe(): Subscription;
+  subscribe(observer: PartialObserver&lt;LogEntry&gt;): Subscription;
+  subscribe(
+    next?: <span class="hljs-function">(<span class="hljs-params">value: LogEntry</span>) =&gt;</span> <span class="hljs-built_in">void</span>,
+    error?: <span class="hljs-function">(<span class="hljs-params">error: <span class="hljs-built_in">Error</span></span>) =&gt;</span> <span class="hljs-built_in">void</span>,
+    complete?: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">void</span>
+  ): Subscription;
+  subscribe(
+    _observerOrNext?: PartialObserver&lt;LogEntry&gt; | <span class="hljs-function">(<span class="hljs-params">(<span class="hljs-params">value: LogEntry</span>) =&gt; <span class="hljs-built_in">void</span></span>),
+    _<span class="hljs-params">error</span>?: (<span class="hljs-params">error: <span class="hljs-built_in">Error</span></span>) =&gt;</span> <span class="hljs-built_in">void</span>,
+    _complete?: <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> <span class="hljs-built_in">void</span>
+  ): Subscription {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._observable.subscribe.apply(<span class="hljs-keyword">this</span>._observable, <span class="hljs-built_in">arguments</span>);
+  }
+  forEach(
+    next: <span class="hljs-function">(<span class="hljs-params">value: LogEntry</span>) =&gt;</span> <span class="hljs-built_in">void</span>,
+    PromiseCtor?: <span class="hljs-keyword">typeof</span> <span class="hljs-built_in">Promise</span>
+  ): <span class="hljs-built_in">Promise</span>&lt;<span class="hljs-built_in">void</span>&gt; {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._observable.forEach(next, PromiseCtor);
+  }
+}
+</code></pre>
+<ul>
+<li>测试</li>
+</ul>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">import</span> { toArray } <span class="hljs-keyword">from</span> <span class="hljs-string">'rxjs/operators'</span>;
+<span class="hljs-keyword">import</span> { JsonValue } <span class="hljs-keyword">from</span> <span class="hljs-string">'../json/interface'</span>;
+<span class="hljs-keyword">import</span> { Logger } <span class="hljs-keyword">from</span> <span class="hljs-string">'./logger'</span>;
+
+describe(<span class="hljs-string">'Logger'</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  it(<span class="hljs-string">'works'</span>, <span class="hljs-function">(<span class="hljs-params">done: DoneFn</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> logger = <span class="hljs-keyword">new</span> Logger(<span class="hljs-string">'test'</span>);
+    logger
+      .pipe(toArray())
+      .toPromise()
+      .then(<span class="hljs-function">(<span class="hljs-params">observed: JsonValue[]</span>) =&gt;</span> {
+        expect(observed).toEqual([
+          jasmine.objectContaining({
+            message: <span class="hljs-string">'hello'</span>,
+            level: <span class="hljs-string">'debug'</span>,
+            name: <span class="hljs-string">'test'</span>
+          }) <span class="hljs-keyword">as</span> <span class="hljs-built_in">any</span>,
+          jasmine.objectContaining({
+            message: <span class="hljs-string">'world'</span>,
+            level: <span class="hljs-string">'info'</span>,
+            name: <span class="hljs-string">'test'</span>
+          }) <span class="hljs-keyword">as</span> <span class="hljs-built_in">any</span>
+        ]);
+      })
+      .then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> done(), <span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> done.fail(err));
+
+    logger.debug(<span class="hljs-string">'hello'</span>);
+    logger.info(<span class="hljs-string">'world'</span>);
+    logger.complete();
+  });
+
+  it(<span class="hljs-string">'works with children'</span>, <span class="hljs-function">(<span class="hljs-params">done: DoneFn</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> logger = <span class="hljs-keyword">new</span> Logger(<span class="hljs-string">'test'</span>);
+    <span class="hljs-keyword">let</span> hasCompleted = <span class="hljs-literal">false</span>;
+    logger
+      .pipe(toArray())
+      .toPromise()
+      .then(<span class="hljs-function">(<span class="hljs-params">observed: JsonValue[]</span>) =&gt;</span> {
+        expect(observed).toEqual([
+          jasmine.objectContaining({
+            message: <span class="hljs-string">'hello'</span>,
+            level: <span class="hljs-string">'debug'</span>,
+            name: <span class="hljs-string">'child'</span>
+          }) <span class="hljs-keyword">as</span> <span class="hljs-built_in">any</span>,
+          jasmine.objectContaining({
+            message: <span class="hljs-string">'world'</span>,
+            level: <span class="hljs-string">'info'</span>,
+            name: <span class="hljs-string">'child'</span>
+          }) <span class="hljs-keyword">as</span> <span class="hljs-built_in">any</span>
+        ]);
+        expect(hasCompleted).toBe(<span class="hljs-literal">true</span>);
+      })
+      .then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> done(), <span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> done.fail(err));
+
+    <span class="hljs-keyword">const</span> childLogger = <span class="hljs-keyword">new</span> Logger(<span class="hljs-string">'child'</span>, logger);
+    childLogger.subscribe(<span class="hljs-literal">undefined</span>, <span class="hljs-literal">undefined</span>, <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> (hasCompleted = <span class="hljs-literal">true</span>));
+    childLogger.debug(<span class="hljs-string">'hello'</span>);
+    childLogger.info(<span class="hljs-string">'world'</span>);
+    logger.complete();
+  });
+
+  it(<span class="hljs-string">'misses messages if not subscribed'</span>, <span class="hljs-function">(<span class="hljs-params">done: DoneFn</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> logger = <span class="hljs-keyword">new</span> Logger(<span class="hljs-string">'test'</span>);
+    logger.debug(<span class="hljs-string">'woah'</span>);
+
+    logger
+      .pipe(toArray())
+      .toPromise()
+      .then(<span class="hljs-function">(<span class="hljs-params">observed: JsonValue[]</span>) =&gt;</span> {
+        expect(observed).toEqual([
+          jasmine.objectContaining({
+            message: <span class="hljs-string">'hello'</span>,
+            level: <span class="hljs-string">'debug'</span>,
+            name: <span class="hljs-string">'test'</span>
+          }) <span class="hljs-keyword">as</span> <span class="hljs-built_in">any</span>
+        ]);
+      })
+      .then(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> done(), <span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> done.fail(err));
+
+    logger.debug(<span class="hljs-string">'hello'</span>);
+    logger.complete();
+  });
+});
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="常见的-useragent"></a><a href="#常见的-useragent" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>常见的 userAgent</h2>
+<p>常见的 <code>userAgent</code> 列表</p>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> [
+  {
+    name: <span class="hljs-string">'iPhone 4'</span>,
+    userAgent:
+      <span class="hljs-string">'Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53'</span>,
+    viewport: {
+      width: <span class="hljs-number">320</span>,
+      height: <span class="hljs-number">480</span>,
+      deviceScaleFactor: <span class="hljs-number">2</span>,
+      isMobile: <span class="hljs-literal">true</span>,
+      hasTouch: <span class="hljs-literal">true</span>,
+      isLandscape: <span class="hljs-literal">false</span>
+    }
+  },
+  {
+    name: <span class="hljs-string">'iPhone 4 landscape'</span>,
+    userAgent:
+      <span class="hljs-string">'Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_2 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D257 Safari/9537.53'</span>,
+    viewport: {
+      width: <span class="hljs-number">480</span>,
+      height: <span class="hljs-number">320</span>,
+      deviceScaleFactor: <span class="hljs-number">2</span>,
+      isMobile: <span class="hljs-literal">true</span>,
+      hasTouch: <span class="hljs-literal">true</span>,
+      isLandscape: <span class="hljs-literal">true</span>
+    }
+  },
+  {
+    name: <span class="hljs-string">'iPhone 5'</span>,
+    userAgent:
+      <span class="hljs-string">'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1'</span>,
+    viewport: {
+      width: <span class="hljs-number">320</span>,
+      height: <span class="hljs-number">568</span>,
+      deviceScaleFactor: <span class="hljs-number">2</span>,
+      isMobile: <span class="hljs-literal">true</span>,
+      hasTouch: <span class="hljs-literal">true</span>,
+      isLandscape: <span class="hljs-literal">false</span>
+    }
+  }
+];
+<span class="hljs-comment">// 更多查看</span>
+</code></pre>
+<blockquote>
+<p><a href="https://github.com/GoogleChrome/puppeteer/blob/master/lib/DeviceDescriptors.js">查看更多</a></p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="mapservice"></a><a href="#mapservice" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MapService</h2>
+<pre><code class="hljs css language-ts"><span class="hljs-comment">/**
+ * @template T
+ * @template V
+ */</span>
+<span class="hljs-keyword">class</span> Multimap {
+  <span class="hljs-keyword">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">this</span>._map = <span class="hljs-keyword">new</span> Map();
+  }
+
+  <span class="hljs-comment">/**
+   * @param {T} key
+   * @param {V} value
+   */</span>
+  <span class="hljs-keyword">set</span>(key, value) {
+    <span class="hljs-keyword">let</span> <span class="hljs-keyword">set</span> = <span class="hljs-keyword">this</span>._map.get(key);
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">set</span>) {
+      <span class="hljs-keyword">set</span> = <span class="hljs-keyword">new</span> Set();
+      <span class="hljs-keyword">this</span>._map.set(key, <span class="hljs-keyword">set</span>);
+    }
+    <span class="hljs-keyword">set</span>.add(value);
+  }
+
+  <span class="hljs-comment">/**
+   * @param {T} key
+   * @return {!Set&lt;V&gt;}
+   */</span>
+  <span class="hljs-keyword">get</span>(key) {
+    <span class="hljs-keyword">let</span> result = <span class="hljs-keyword">this</span>._map.get(key);
+    <span class="hljs-keyword">if</span> (!result)
+      result = <span class="hljs-keyword">new</span> Set();
+    <span class="hljs-keyword">return</span> result;
+  }
+
+  <span class="hljs-comment">/**
+   * @param {T} key
+   * @return {boolean}
+   */</span>
+  has(key) {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._map.has(key);
+  }
+
+  <span class="hljs-comment">/**
+   * @param {T} key
+   * @param {V} value
+   * @return {boolean}
+   */</span>
+  hasValue(key, value) {
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">set</span> = <span class="hljs-keyword">this</span>._map.get(key);
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">set</span>)
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">set</span>.has(value);
+  }
+
+  <span class="hljs-comment">/**
+   * @return {number}
+   */</span>
+  <span class="hljs-keyword">get</span> size() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._map.size;
+  }
+
+  <span class="hljs-comment">/**
+   * @param {T} key
+   * @param {V} value
+   * @return {boolean}
+   */</span>
+  <span class="hljs-keyword">delete</span>(key, value) {
+    <span class="hljs-keyword">const</span> values = <span class="hljs-keyword">this</span>.get(key);
+    <span class="hljs-keyword">const</span> result = values.delete(value);
+    <span class="hljs-keyword">if</span> (!values.size)
+      <span class="hljs-keyword">this</span>._map.delete(key);
+    <span class="hljs-keyword">return</span> result;
+  }
+
+  <span class="hljs-comment">/**
+   * @param {T} key
+   */</span>
+  deleteAll(key) {
+    <span class="hljs-keyword">this</span>._map.delete(key);
+  }
+
+  <span class="hljs-comment">/**
+   * @param {T} key
+   * @return {V}
+   */</span>
+  firstValue(key) {
+    <span class="hljs-keyword">const</span> <span class="hljs-keyword">set</span> = <span class="hljs-keyword">this</span>._map.get(key);
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">set</span>)
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">set</span>.values().next().value;
+  }
+
+  <span class="hljs-comment">/**
+   * @return {T}
+   */</span>
+  firstKey() {
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>._map.keys().next().value;
+  }
+
+  <span class="hljs-comment">/**
+   * @return {!Array&lt;V&gt;}
+   */</span>
+  valuesArray() {
+    <span class="hljs-keyword">const</span> result = [];
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> key of <span class="hljs-keyword">this</span>._map.keys())
+      result.push(...Array.from(<span class="hljs-keyword">this</span>._map.get(key).values()));
+    <span class="hljs-keyword">return</span> result;
+  }
+
+  <span class="hljs-comment">/**
+   * @return {!Array&lt;T&gt;}
+   */</span>
+  keysArray() {
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Array</span>.from(<span class="hljs-keyword">this</span>._map.keys());
+  }
+
+  clear() {
+    <span class="hljs-keyword">this</span>._map.clear();
+  }
+}
+
+<span class="hljs-built_in">module</span>.exports = Multimap;
+
+</code></pre>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-10-11 by 岑少任</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-fex/docs/1.0.8/business/nodejs2"><span class="arrow-prev">← </span><span>Node 常用扩展模块 2</span></a><a class="docs-next button" href="/docusaurus-fex/docs/1.0.8/business/validators"><span>validators 表单验证</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#deepcopy-深拷贝">deepCopy 深拷贝</a></li><li><a href="#优先队列-priorityqueue">优先队列 PriorityQueue</a></li><li><a href="#log-工具类">log 工具类</a></li><li><a href="#常见的-useragent">常见的 userAgent</a></li><li><a href="#mapservice">MapService</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-fex/" class="nav-home"><img src="/docusaurus-fex/img/logo.png" alt="前端技术文档库" width="48" height="48" style="max-width:initial"/></a><div><h5>Docs</h5><a href="/docusaurus-fex/docs/en/start.html">快速开始</a><a href="/docusaurus-fex/docs/en/page-guide.html">查看规范</a><a href="/docusaurus-fex/docs/en/reading-more.html">拓展阅读</a></div><div><h5>Community</h5><a href="/docusaurus-fex/en/users.html">User Showcase</a><a href="/docusaurus-fex/en/business.html">business</a></div><div><h5>More</h5><a href="/docusaurus-fex/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docusaurus-fex/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/><section class="copyright">Copyright © 2020 友点科技</section></a></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '3eb9507824b8be89e7a199ecaa1a9d2c',
+                indexName: 'docusaurus',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {"facetFilters":["language:en","version:1.0.8"]}
+              });
+            </script></body></html>
