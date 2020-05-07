@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>枚举类型 enums · 前端技术文档库</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="常见的枚举类型"/><meta name="docsearch:version" content="1.1.1"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="枚举类型 enums · 前端技术文档库"/><meta property="og:type" content="website"/><meta property="og:url" content="https://leesren.github.io/docusaurus-fex/"/><meta property="og:description" content="常见的枚举类型"/><meta property="og:image" content="https://leesren.github.io/docusaurus-fex/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/docusaurus-fex/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://leesren.github.io/docusaurus-fex/blog/atom.xml" title="前端技术文档库 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://leesren.github.io/docusaurus-fex/blog/feed.xml" title="前端技术文档库 Blog RSS Feed"/><script type="text/javascript" src="/docusaurus-fex//js/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/docusaurus-fex//js/code-blocks-buttons.js"></script><script src="/docusaurus-fex/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-fex/css/prism.css"/><link rel="stylesheet" href="/docusaurus-fex/css/main.css"/><script src="/docusaurus-fex/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-fex/"><img class="logo" src="/docusaurus-fex/img/favicon.ico" alt="前端技术文档库"/><h2 class="headerTitleWithLogo">前端技术文档库</h2></a><a href="/docusaurus-fex/versions"><h3>1.1.1</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class="siteNavGroupActive"><a href="/docusaurus-fex/docs/1.1.1/start" target="_self">快速开始</a></li><li class=""><a href="/docusaurus-fex/docs/1.1.1/doc4" target="_self">API</a></li><li class=""><a href="/docusaurus-fex/help" target="_self">Help</a></li><li class=""><a href="/docusaurus-fex/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>业务</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">关于规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/start">快速上手</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/restructure-frontend-rules-choice">重构答疑</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/restructure-frontend-shape-screen">游戏内异形屏适配规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/restructure-frontend-rules-html">HTML 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/restructure-frontend-rules-css">CSS 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/restructure-frontend-rules-js">Javascript 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/restructure-frontend-rules-vue">Vue.js 组件编码规范</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">页面规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide">页面规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-header">页面头部</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-css">CSS 规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-name">注释与命名</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-dir">文件目录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-img">图片处理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-sta">数据统计</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----PC端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-pc-compatible">浏览器兼容</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-pc-share">页面分享</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----移动端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-mobile-design">移动端页面设计规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-mobile-font">移动端页面字体使用参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-mobile-rem">rem 布局</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-mobile-compatible">移动端页面兼容要求</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/page-guide-mobile-media">移动端 H5 页面音频/视频规范</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">工具/系统<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/tools">常用工具/参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/cdn">常用 JS 库 CDN</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/img-press">图片压缩工具</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">特殊规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/spec-concheck">页面内容检查</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/spec-version">版本管理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/code-review">代码健壮</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">扩展阅读<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/reading-more">拓展阅读</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/safe">WEB 前端页面安全指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/performance">移动端页面性能优化指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/viewport">视口（viewport）基础知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/mobile-response">移动端页面适配知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/mobile-event">移动端事件介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/style-guide-airbnb-js">Airbnb JavaScript 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/style-guide-react">React 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/style-guide-vue2">Vue 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/style-guide-angular">Angular - 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/style-guide-ts">TypeScript</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/style-guide-You-Dont-Know-JS">你不懂 JS（系列丛书）【中文】</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/style-guide-cache">缓存</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/style-guide-chrome-devtools">Chrome 开发者工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/style-guide-input">输入框问题</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/style-guide-error">错误监控</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端导航<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/fe-nav">前端导航</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端监控<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/monitor/intro">产品介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/monitor/start">快速开始</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/monitor/usage">用户使用手册</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/monitor/advance">高级选项</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/monitor/faq">FAQ</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">技巧<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/tips/frame">帧率调节</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/tips/speedup">加速减速</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/tips/array">数组</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/tips/task">任务队列</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/tips/css-tips">CSS 技巧</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/tips/js-advance">JS高级</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">业务<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/business/ArrayBuffer">ArrayBuffer 工具类</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/business/enums">枚举类型 enums</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/business/exception">自定义 Exception</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/business/fs">Node fs 模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/business/http">Http 相关</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/business/node-tips">Node 记录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/business/nodejs">Node 常用扩展模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/business/nodejs2">Node 常用扩展模块 2</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/business/utils">常用工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/business/validators">validators 表单验证</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/business/vue">Vue 记录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.1/business/react">React 知识汇总</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">枚举类型 enums</h1></header><article><div><span><p>常见的枚举类型</p>
+<h2><a class="anchor" aria-hidden="true" id="http-statusenum"></a><a href="#http-statusenum" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>http-status.enum</h2>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">enum</span> HttpStatus {
+  CONTINUE = <span class="hljs-number">100</span>,
+  SWITCHING_PROTOCOLS = <span class="hljs-number">101</span>,
+  PROCESSING = <span class="hljs-number">102</span>,
+  OK = <span class="hljs-number">200</span>,
+  CREATED = <span class="hljs-number">201</span>,
+  ACCEPTED = <span class="hljs-number">202</span>,
+  NON_AUTHORITATIVE_INFORMATION = <span class="hljs-number">203</span>,
+  NO_CONTENT = <span class="hljs-number">204</span>,
+  RESET_CONTENT = <span class="hljs-number">205</span>,
+  PARTIAL_CONTENT = <span class="hljs-number">206</span>,
+  AMBIGUOUS = <span class="hljs-number">300</span>,
+  MOVED_PERMANENTLY = <span class="hljs-number">301</span>,
+  FOUND = <span class="hljs-number">302</span>,
+  SEE_OTHER = <span class="hljs-number">303</span>,
+  NOT_MODIFIED = <span class="hljs-number">304</span>,
+  TEMPORARY_REDIRECT = <span class="hljs-number">307</span>,
+  PERMANENT_REDIRECT = <span class="hljs-number">308</span>,
+  BAD_REQUEST = <span class="hljs-number">400</span>,
+  UNAUTHORIZED = <span class="hljs-number">401</span>,
+  PAYMENT_REQUIRED = <span class="hljs-number">402</span>,
+  FORBIDDEN = <span class="hljs-number">403</span>,
+  NOT_FOUND = <span class="hljs-number">404</span>,
+  METHOD_NOT_ALLOWED = <span class="hljs-number">405</span>,
+  NOT_ACCEPTABLE = <span class="hljs-number">406</span>,
+  PROXY_AUTHENTICATION_REQUIRED = <span class="hljs-number">407</span>,
+  REQUEST_TIMEOUT = <span class="hljs-number">408</span>,
+  CONFLICT = <span class="hljs-number">409</span>,
+  GONE = <span class="hljs-number">410</span>,
+  LENGTH_REQUIRED = <span class="hljs-number">411</span>,
+  PRECONDITION_FAILED = <span class="hljs-number">412</span>,
+  PAYLOAD_TOO_LARGE = <span class="hljs-number">413</span>,
+  URI_TOO_LONG = <span class="hljs-number">414</span>,
+  UNSUPPORTED_MEDIA_TYPE = <span class="hljs-number">415</span>,
+  REQUESTED_RANGE_NOT_SATISFIABLE = <span class="hljs-number">416</span>,
+  EXPECTATION_FAILED = <span class="hljs-number">417</span>,
+  I_AM_A_TEAPOT = <span class="hljs-number">418</span>,
+  UNPROCESSABLE_ENTITY = <span class="hljs-number">422</span>,
+  TOO_MANY_REQUESTS = <span class="hljs-number">429</span>,
+  INTERNAL_SERVER_ERROR = <span class="hljs-number">500</span>,
+  NOT_IMPLEMENTED = <span class="hljs-number">501</span>,
+  BAD_GATEWAY = <span class="hljs-number">502</span>,
+  SERVICE_UNAVAILABLE = <span class="hljs-number">503</span>,
+  GATEWAY_TIMEOUT = <span class="hljs-number">504</span>,
+  HTTP_VERSION_NOT_SUPPORTED = <span class="hljs-number">505</span>
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="request-methodenum"></a><a href="#request-methodenum" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>request-method.enum</h2>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">export</span> <span class="hljs-keyword">enum</span> RequestMethod {
+  GET = <span class="hljs-number">0</span>,
+  POST,
+  PUT,
+  DELETE,
+  PATCH,
+  ALL,
+  OPTIONS,
+  HEAD
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="status_texts"></a><a href="#status_texts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>STATUS_TEXTS</h2>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">const</span> STATUS_TEXTS = {
+  <span class="hljs-string">'100'</span>: <span class="hljs-string">'Continue'</span>,
+  <span class="hljs-string">'101'</span>: <span class="hljs-string">'Switching Protocols'</span>,
+  <span class="hljs-string">'102'</span>: <span class="hljs-string">'Processing'</span>,
+  <span class="hljs-string">'103'</span>: <span class="hljs-string">'Early Hints'</span>,
+  <span class="hljs-string">'200'</span>: <span class="hljs-string">'OK'</span>,
+  <span class="hljs-string">'201'</span>: <span class="hljs-string">'Created'</span>,
+  <span class="hljs-string">'202'</span>: <span class="hljs-string">'Accepted'</span>,
+  <span class="hljs-string">'203'</span>: <span class="hljs-string">'Non-Authoritative Information'</span>,
+  <span class="hljs-string">'204'</span>: <span class="hljs-string">'No Content'</span>,
+  <span class="hljs-string">'205'</span>: <span class="hljs-string">'Reset Content'</span>,
+  <span class="hljs-string">'206'</span>: <span class="hljs-string">'Partial Content'</span>,
+  <span class="hljs-string">'207'</span>: <span class="hljs-string">'Multi-Status'</span>,
+  <span class="hljs-string">'208'</span>: <span class="hljs-string">'Already Reported'</span>,
+  <span class="hljs-string">'226'</span>: <span class="hljs-string">'IM Used'</span>,
+  <span class="hljs-string">'300'</span>: <span class="hljs-string">'Multiple Choices'</span>,
+  <span class="hljs-string">'301'</span>: <span class="hljs-string">'Moved Permanently'</span>,
+  <span class="hljs-string">'302'</span>: <span class="hljs-string">'Found'</span>,
+  <span class="hljs-string">'303'</span>: <span class="hljs-string">'See Other'</span>,
+  <span class="hljs-string">'304'</span>: <span class="hljs-string">'Not Modified'</span>,
+  <span class="hljs-string">'305'</span>: <span class="hljs-string">'Use Proxy'</span>,
+  <span class="hljs-string">'306'</span>: <span class="hljs-string">'Switch Proxy'</span>,
+  <span class="hljs-string">'307'</span>: <span class="hljs-string">'Temporary Redirect'</span>,
+  <span class="hljs-string">'308'</span>: <span class="hljs-string">'Permanent Redirect'</span>,
+  <span class="hljs-string">'400'</span>: <span class="hljs-string">'Bad Request'</span>,
+  <span class="hljs-string">'401'</span>: <span class="hljs-string">'Unauthorized'</span>,
+  <span class="hljs-string">'402'</span>: <span class="hljs-string">'Payment Required'</span>,
+  <span class="hljs-string">'403'</span>: <span class="hljs-string">'Forbidden'</span>,
+  <span class="hljs-string">'404'</span>: <span class="hljs-string">'Not Found'</span>,
+  <span class="hljs-string">'405'</span>: <span class="hljs-string">'Method Not Allowed'</span>,
+  <span class="hljs-string">'406'</span>: <span class="hljs-string">'Not Acceptable'</span>,
+  <span class="hljs-string">'407'</span>: <span class="hljs-string">'Proxy Authentication Required'</span>,
+  <span class="hljs-string">'408'</span>: <span class="hljs-string">'Request Timeout'</span>,
+  <span class="hljs-string">'409'</span>: <span class="hljs-string">'Conflict'</span>,
+  <span class="hljs-string">'410'</span>: <span class="hljs-string">'Gone'</span>,
+  <span class="hljs-string">'411'</span>: <span class="hljs-string">'Length Required'</span>,
+  <span class="hljs-string">'412'</span>: <span class="hljs-string">'Precondition Failed'</span>,
+  <span class="hljs-string">'413'</span>: <span class="hljs-string">'Payload Too Large'</span>,
+  <span class="hljs-string">'414'</span>: <span class="hljs-string">'URI Too Long'</span>,
+  <span class="hljs-string">'415'</span>: <span class="hljs-string">'Unsupported Media Type'</span>,
+  <span class="hljs-string">'416'</span>: <span class="hljs-string">'Range Not Satisfiable'</span>,
+  <span class="hljs-string">'417'</span>: <span class="hljs-string">'Expectation Failed'</span>,
+  <span class="hljs-string">'418'</span>: <span class="hljs-string">"I'm a teapot"</span>,
+  <span class="hljs-string">'421'</span>: <span class="hljs-string">'Misdirected Request'</span>,
+  <span class="hljs-string">'422'</span>: <span class="hljs-string">'Unprocessable Entity'</span>,
+  <span class="hljs-string">'423'</span>: <span class="hljs-string">'Locked'</span>,
+  <span class="hljs-string">'424'</span>: <span class="hljs-string">'Failed Dependency'</span>,
+  <span class="hljs-string">'425'</span>: <span class="hljs-string">'Too Early'</span>,
+  <span class="hljs-string">'426'</span>: <span class="hljs-string">'Upgrade Required'</span>,
+  <span class="hljs-string">'428'</span>: <span class="hljs-string">'Precondition Required'</span>,
+  <span class="hljs-string">'429'</span>: <span class="hljs-string">'Too Many Requests'</span>,
+  <span class="hljs-string">'431'</span>: <span class="hljs-string">'Request Header Fields Too Large'</span>,
+  <span class="hljs-string">'451'</span>: <span class="hljs-string">'Unavailable For Legal Reasons'</span>,
+  <span class="hljs-string">'500'</span>: <span class="hljs-string">'Internal Server Error'</span>,
+  <span class="hljs-string">'501'</span>: <span class="hljs-string">'Not Implemented'</span>,
+  <span class="hljs-string">'502'</span>: <span class="hljs-string">'Bad Gateway'</span>,
+  <span class="hljs-string">'503'</span>: <span class="hljs-string">'Service Unavailable'</span>,
+  <span class="hljs-string">'504'</span>: <span class="hljs-string">'Gateway Timeout'</span>,
+  <span class="hljs-string">'505'</span>: <span class="hljs-string">'HTTP Version Not Supported'</span>,
+  <span class="hljs-string">'506'</span>: <span class="hljs-string">'Variant Also Negotiates'</span>,
+  <span class="hljs-string">'507'</span>: <span class="hljs-string">'Insufficient Storage'</span>,
+  <span class="hljs-string">'508'</span>: <span class="hljs-string">'Loop Detected'</span>,
+  <span class="hljs-string">'510'</span>: <span class="hljs-string">'Not Extended'</span>,
+  <span class="hljs-string">'511'</span>: <span class="hljs-string">'Network Authentication Required'</span>
+};
+</code></pre>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-10-11 by 岑少任</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-fex/docs/1.1.1/business/ArrayBuffer"><span class="arrow-prev">← </span><span class="function-name-prevnext">ArrayBuffer 工具类</span></a><a class="docs-next button" href="/docusaurus-fex/docs/1.1.1/business/exception"><span>自定义 Exception</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#http-statusenum">http-status.enum</a></li><li><a href="#request-methodenum">request-method.enum</a></li><li><a href="#status_texts">STATUS_TEXTS</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-fex/" class="nav-home"><img src="/docusaurus-fex/img/logo.png" alt="前端技术文档库" width="48" height="48" style="max-width:initial"/></a><div><h5>Docs</h5><a href="/docusaurus-fex/docs/en/start.html">快速开始</a><a href="/docusaurus-fex/docs/en/page-guide.html">查看规范</a><a href="/docusaurus-fex/docs/en/reading-more.html">拓展阅读</a></div><div><h5>Community</h5><a href="/docusaurus-fex/en/users.html">User Showcase</a><a href="/docusaurus-fex/en/business.html">business</a></div><div><h5>More</h5><a href="/docusaurus-fex/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docusaurus-fex/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/><section class="copyright">Copyright © 2020 友点科技</section></a></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '3eb9507824b8be89e7a199ecaa1a9d2c',
+                indexName: 'docusaurus',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {"facetFilters":["language:en","version:1.1.1"]}
+              });
+            </script></body></html>
