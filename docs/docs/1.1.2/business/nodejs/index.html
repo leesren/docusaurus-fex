@@ -1,0 +1,442 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Node 常用扩展模块 · 前端技术文档库</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="社区常用的 `node` 模块"/><meta name="docsearch:version" content="1.1.2"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Node 常用扩展模块 · 前端技术文档库"/><meta property="og:type" content="website"/><meta property="og:url" content="https://leesren.github.io/docusaurus-fex/"/><meta property="og:description" content="社区常用的 `node` 模块"/><meta property="og:image" content="https://leesren.github.io/docusaurus-fex/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/docusaurus-fex/img/favicon.ico"/><link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://leesren.github.io/docusaurus-fex/blog/atom.xml" title="前端技术文档库 Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://leesren.github.io/docusaurus-fex/blog/feed.xml" title="前端技术文档库 Blog RSS Feed"/><script type="text/javascript" src="/docusaurus-fex//js/buttons.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script><script type="text/javascript" src="/docusaurus-fex//js/code-blocks-buttons.js"></script><script src="/docusaurus-fex/js/scrollSpy.js"></script><link rel="stylesheet" href="/docusaurus-fex/css/prism.css"/><link rel="stylesheet" href="/docusaurus-fex/css/main.css"/><script src="/docusaurus-fex/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/docusaurus-fex/"><img class="logo" src="/docusaurus-fex/img/favicon.ico" alt="前端技术文档库"/><h2 class="headerTitleWithLogo">前端技术文档库</h2></a><a href="/docusaurus-fex/versions"><h3>1.1.2</h3></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="navSearchWrapper reactNavSearchWrapper"><input type="text" id="search_input_react" placeholder="Search" title="Search"/></li><li class="siteNavGroupActive"><a href="/docusaurus-fex/docs/1.1.2/start" target="_self">快速开始</a></li><li class=""><a href="/docusaurus-fex/docs/1.1.2/doc4" target="_self">API</a></li><li class=""><a href="/docusaurus-fex/help" target="_self">Help</a></li><li class=""><a href="/docusaurus-fex/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>业务</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">关于规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/start">快速上手</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/restructure-frontend-rules-choice">重构答疑</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/restructure-frontend-shape-screen">游戏内异形屏适配规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/restructure-frontend-rules-html">HTML 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/restructure-frontend-rules-css">CSS 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/restructure-frontend-rules-js">Javascript 编码规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/restructure-frontend-rules-vue">Vue.js 组件编码规范</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">页面规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide">页面规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-header">页面头部</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-css">CSS 规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-name">注释与命名</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-dir">文件目录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-img">图片处理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-sta">数据统计</a></li><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----PC端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-pc-compatible">浏览器兼容</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-pc-share">页面分享</a></li></ul></div><div class="navGroup subNavGroup"><h4 class="navGroupSubcategoryTitle">----移动端----</h4><ul><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-mobile-design">移动端页面设计规范</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-mobile-font">移动端页面字体使用参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-mobile-rem">rem 布局</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-mobile-compatible">移动端页面兼容要求</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/page-guide-mobile-media">移动端 H5 页面音频/视频规范</a></li></ul></div></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">工具/系统<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/tools">常用工具/参考</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/cdn">常用 JS 库 CDN</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/img-press">图片压缩工具</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">特殊规范<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/spec-concheck">页面内容检查</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/spec-version">版本管理</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/code-review">代码健壮</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">扩展阅读<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/reading-more">拓展阅读</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/safe">WEB 前端页面安全指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/performance">移动端页面性能优化指引</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/viewport">视口（viewport）基础知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/mobile-response">移动端页面适配知识</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/mobile-event">移动端事件介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/style-guide-airbnb-js">Airbnb JavaScript 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/style-guide-react">React 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/style-guide-vue2">Vue 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/style-guide-angular">Angular - 风格指南</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/style-guide-ts">TypeScript</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/style-guide-You-Dont-Know-JS">你不懂 JS（系列丛书）【中文】</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/style-guide-cache">缓存</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/style-guide-chrome-devtools">Chrome 开发者工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/style-guide-input">输入框问题</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/style-guide-error">错误监控</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端导航<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/fe-nav">前端导航</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">前端监控<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/monitor/intro">产品介绍</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/monitor/start">快速开始</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/monitor/usage">用户使用手册</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/monitor/advance">高级选项</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/monitor/faq">FAQ</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">技巧<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/tips/frame">帧率调节</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/tips/speedup">加速减速</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/tips/array">数组</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/tips/task">任务队列</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/tips/css-tips">CSS 技巧</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/tips/js-advance">JS高级</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/tips/github">github 开源</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/3D">3D</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/webrtc">WebRTC</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/tips/mobile-debug">移动端调试</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle collapsible">业务<span class="arrow"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></span></h3><ul class="hide"><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/business/ArrayBuffer">ArrayBuffer 工具类</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/business/enums">枚举类型 enums</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/business/exception">自定义 Exception</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/business/fs">Node fs 模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/business/http">Http 相关</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/business/node-tips">Node 记录</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/business/nodejs">Node 常用扩展模块</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/business/nodejs2">Node 常用扩展模块 2</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/business/utils">常用工具</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/business/validators">validators 表单验证</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/business/vue">Vue 记录</a></li><li class="navListItem"><a class="navItem" href="/docusaurus-fex/docs/1.1.2/business/react">React 知识汇总</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Node 常用扩展模块</h1></header><article><div><span><p>社区常用的 <code>node</code> 模块</p>
+<h2><a class="anchor" aria-hidden="true" id="chokidar"></a><a href="#chokidar" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>chokidar</h2>
+<ul>
+<li><a href="https://github.com/paulmillr/chokidar"><img src="https://img.shields.io/npm/dy/chokidar.svg" alt="Yearly downloads"></a> , A neat wrapper around node.js fs.watch / fs.watchFile / FSEvents.</li>
+</ul>
+<pre><code class="hljs css language-bash">const chokidar = require(<span class="hljs-string">'chokidar'</span>);
+
+// One-liner <span class="hljs-keyword">for</span> current directory
+chokidar.watch(<span class="hljs-string">'.'</span>).on(<span class="hljs-string">'all'</span>, (event, path) =&gt; {
+  console.log(event, path);
+});
+
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="fs-extra"></a><a href="#fs-extra" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>fs-extra</h2>
+<ul>
+<li><a href="https://www.npmjs.org/package/fs-extra"><img src="http://img.shields.io/npm/dm/fs-extra.svg" alt="downloads per month"></a> , I got tired of including mkdirp, rimraf, and ncp in most of my projects.</li>
+</ul>
+<pre><code class="hljs css language-bash">npm install fs-extra
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="chalk"></a><a href="#chalk" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>chalk</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/chalk"><img src="https://badgen.net/npm/dt/chalk" alt="downloads per month"></a> , node 终端自定义展示样式，
+Terminal string styling done right</li>
+</ul>
+<pre><code class="hljs css language-bash">
+const chalk = require(<span class="hljs-string">'chalk'</span>);
+
+console.log(chalk.blue(<span class="hljs-string">'Hello world!'</span>));
+
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="uuid-和-node-uuid"></a><a href="#uuid-和-node-uuid" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>uuid 和 node-uuid</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/uuid"><img src="https://badgen.net/npm/dt/uuid" alt="downloads per month"></a> , Simple, fast generation of RFC4122 UUIDS.</li>
+</ul>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">const</span> uuidv1 = <span class="hljs-built_in">require</span>(<span class="hljs-string">'uuid/v1'</span>);
+uuidv1(); <span class="hljs-comment">// ⇨ '2c5ea4c0-4067-11e9-8bad-9b1deb4d3b7d'</span>
+</code></pre>
+<p>或者自己自定义</p>
+<pre><code class="hljs css language-js"><span class="hljs-comment">/**
+ * 生成唯一标识
+ */</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> getGuid = <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+  <span class="hljs-keyword">let</span> guid = <span class="hljs-string">'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'</span>;
+  <span class="hljs-keyword">return</span> guid.replace(<span class="hljs-regexp">/[xy]/g</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">c</span>) </span>{
+    <span class="hljs-keyword">var</span> r = (<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">16</span>) | <span class="hljs-number">0</span>,
+      v = c == <span class="hljs-string">'x'</span> ? r : (r &amp; <span class="hljs-number">0x3</span>) | <span class="hljs-number">0x8</span>;
+    <span class="hljs-keyword">return</span> v.toString(<span class="hljs-number">16</span>);
+  });
+};
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="md5"></a><a href="#md5" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>md5</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/md5"><img src="https://badgen.net/npm/dt/md5" alt="downloads per month"></a> , a JavaScript function for hashing messages with MD5.</li>
+</ul>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">var</span> md5 = <span class="hljs-built_in">require</span>(<span class="hljs-string">'md5'</span>);
+
+<span class="hljs-built_in">console</span>.log(md5(<span class="hljs-string">'message'</span>));
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="config"></a><a href="#config" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>config</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/config"><img src="https://badgen.net/npm/dt/config" alt="downloads per month"></a> , Configure your Node.js Applications</li>
+</ul>
+<pre><code class="hljs css language-bash">npm install config
+mkdir config
+vi config/default.json
+</code></pre>
+<pre><code class="hljs css language-json">{
+  <span class="hljs-comment">// Customer module configs</span>
+  <span class="hljs-attr">"Customer"</span>: {
+    <span class="hljs-attr">"dbConfig"</span>: {
+      <span class="hljs-attr">"host"</span>: <span class="hljs-string">"localhost"</span>,
+      <span class="hljs-attr">"port"</span>: <span class="hljs-number">5984</span>,
+      <span class="hljs-attr">"dbName"</span>: <span class="hljs-string">"customers"</span>
+    },
+    <span class="hljs-attr">"credit"</span>: {
+      <span class="hljs-attr">"initialLimit"</span>: <span class="hljs-number">100</span>,
+      <span class="hljs-comment">// Set low for development</span>
+      <span class="hljs-attr">"initialDays"</span>: <span class="hljs-number">1</span>
+    }
+  }
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="cross-env"></a><a href="#cross-env" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>cross-env</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/cross-env"><img src="https://badgen.net/npm/dt/cross-env" alt="downloads per month"></a> , Run scripts that set and use environment variables across platforms. 跨平台环境变量解决方案</li>
+</ul>
+<pre><code class="hljs">npm install --<span class="hljs-built_in">save</span>-<span class="hljs-built_in">dev</span> <span class="hljs-built_in">cross</span>-env
+
+
+{
+  <span class="hljs-string">"scripts"</span>: {
+    <span class="hljs-string">"build"</span>: <span class="hljs-string">"cross-env NODE_ENV=production webpack --config build/webpack.config.js"</span>
+  }
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="命令行参数解析"></a><a href="#命令行参数解析" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>命令行参数解析</h2>
+<h3><a class="anchor" aria-hidden="true" id="minimist"></a><a href="#minimist" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>minimist</h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/minimist"><img src="https://badgen.net/npm/dt/minimist" alt="downloads per month"></a> , parse argument options</li>
+</ul>
+<p>This module is the guts of optimist's argument parser without all the fanciful decoration. 解析命令行参数</p>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">var</span> argv = <span class="hljs-built_in">require</span>(<span class="hljs-string">'minimist'</span>)(process.argv.slice(<span class="hljs-number">2</span>));
+<span class="hljs-built_in">console</span>.dir(argv);
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="yargs"></a><a href="#yargs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>yargs</h3>
+<ul>
+<li><a href="https://www.npmjs.com/package/yargs"><img src="https://badgen.net/npm/dt/yargs" alt="downloads per month"></a> , Yargs be a node.js library fer hearties tryin' ter parse optstrings</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-meta">#!/usr/bin/env node</span>
+<span class="hljs-keyword">const</span> argv = <span class="hljs-built_in">require</span>(<span class="hljs-string">'yargs'</span>).argv;
+
+<span class="hljs-keyword">if</span> (argv.ships &gt; <span class="hljs-number">3</span> &amp;&amp; argv.distance &lt; <span class="hljs-number">53.5</span>) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Plunder more riffiwobbles!'</span>);
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Retreat from the xupptumblers!'</span>);
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="semver"></a><a href="#semver" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>semver</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/semver"><img src="https://badgen.net/npm/dt/semver" alt="downloads per month"></a> , The semantic versioner for npm . 语义话版本检测工具</li>
+</ul>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">const</span> semver = <span class="hljs-built_in">require</span>(<span class="hljs-string">'semver'</span>);
+
+semver.valid(<span class="hljs-string">'1.2.3'</span>); <span class="hljs-comment">// '1.2.3'</span>
+semver.valid(<span class="hljs-string">'a.b.c'</span>); <span class="hljs-comment">// null</span>
+semver.clean(<span class="hljs-string">'  =v1.2.3   '</span>); <span class="hljs-comment">// '1.2.3'</span>
+semver.satisfies(<span class="hljs-string">'1.2.3'</span>, <span class="hljs-string">'1.x || &gt;=2.5.0 || 5.0.0 - 7.2.3'</span>); <span class="hljs-comment">// true</span>
+semver.gt(<span class="hljs-string">'1.2.3'</span>, <span class="hljs-string">'9.8.7'</span>); <span class="hljs-comment">// false</span>
+semver.lt(<span class="hljs-string">'1.2.3'</span>, <span class="hljs-string">'9.8.7'</span>); <span class="hljs-comment">// true</span>
+semver.minVersion(<span class="hljs-string">'&gt;=1.0.0'</span>); <span class="hljs-comment">// '1.0.0'</span>
+semver.valid(semver.coerce(<span class="hljs-string">'v2'</span>)); <span class="hljs-comment">// '2.0.0'</span>
+semver.valid(semver.coerce(<span class="hljs-string">'42.6.7.9.3-alpha'</span>)); <span class="hljs-comment">// '42.6.7'</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="diff"></a><a href="#diff" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>diff</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/diff"><img src="https://badgen.net/npm/dt/diff" alt="downloads per month"></a> , A javascript text differencing implementation.</li>
+</ul>
+<p>Based on the algorithm proposed in &quot;An O(ND) Difference Algorithm and its Variations&quot; (Myers, 1986).</p>
+<pre><code class="hljs css language-ts"><span class="hljs-built_in">require</span>(<span class="hljs-string">'colors'</span>);
+<span class="hljs-keyword">var</span> jsdiff = <span class="hljs-built_in">require</span>(<span class="hljs-string">'diff'</span>);
+
+<span class="hljs-keyword">var</span> one = <span class="hljs-string">'beep boop'</span>;
+<span class="hljs-keyword">var</span> other = <span class="hljs-string">'beep boob blah'</span>;
+
+<span class="hljs-keyword">var</span> diff = jsdiff.diffChars(one, other);
+
+diff.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">part</span>) </span>{
+  <span class="hljs-comment">// green for additions, red for deletions</span>
+  <span class="hljs-comment">// grey for common parts</span>
+  <span class="hljs-keyword">var</span> color = part.added ? <span class="hljs-string">'green'</span> : part.removed ? <span class="hljs-string">'red'</span> : <span class="hljs-string">'grey'</span>;
+  process.stderr.write(part.value[color]);
+});
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="base64-js"></a><a href="#base64-js" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>base64-js</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/base64-js"><img src="https://badgen.net/npm/dt/base64-js" alt="downloads per month"></a> , base64-js does basic base64 encoding/decoding in pure JS.</li>
+</ul>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">const</span> base64js = <span class="hljs-built_in">require</span>(<span class="hljs-string">'base64-js'</span>);
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">decodeB64String</span>(<span class="hljs-params">s: <span class="hljs-built_in">string</span></span>): <span class="hljs-title">string</span> </span>{
+  <span class="hljs-keyword">return</span> base64js
+    .toByteArray(s)
+    .reduce(<span class="hljs-function">(<span class="hljs-params">s: <span class="hljs-built_in">string</span>, c: <span class="hljs-built_in">number</span></span>) =&gt;</span> s + <span class="hljs-built_in">String</span>.fromCharCode(c), <span class="hljs-string">''</span>);
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="bytes"></a><a href="#bytes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>bytes</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/bytes"><img src="https://badgen.net/npm/dt/bytes" alt="downloads per month"></a> , 字节单位转换 ，Utility to parse a string bytes (ex: 1TB) to bytes (1099511627776) and vice-versa.</li>
+</ul>
+<pre><code class="hljs css language-ts"><span class="hljs-keyword">var</span> bytes = <span class="hljs-built_in">require</span>(<span class="hljs-string">'bytes'</span>);
+
+bytes(<span class="hljs-number">1024</span>);
+<span class="hljs-comment">// output: '1KB'</span>
+
+bytes(<span class="hljs-number">1000</span>);
+<span class="hljs-comment">// output: '1000B'</span>
+
+bytes(<span class="hljs-number">1000</span>, { thousandsSeparator: <span class="hljs-string">' '</span> });
+<span class="hljs-comment">// output: '1 000B'</span>
+
+bytes(<span class="hljs-number">1024</span> * <span class="hljs-number">1.7</span>, { decimalPlaces: <span class="hljs-number">0</span> });
+<span class="hljs-comment">// output: '2KB'</span>
+
+bytes(<span class="hljs-number">1024</span>, { unitSeparator: <span class="hljs-string">' '</span> });
+<span class="hljs-comment">// output: '1 KB'</span>
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="husky"></a><a href="#husky" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>husky</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/husky"><img src="https://badgen.net/npm/dt/husky" alt="downloads per month"></a> , Husky can prevent bad git commit, git push and more 🐶 woof!</li>
+</ul>
+<p>git 提交前做处理</p>
+<pre><code class="hljs">
+npm install husky <span class="hljs-comment">--save-dev</span>
+
+
+// package.json
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test",
+      "...": "..."
+    }
+  }
+}
+
+
+git <span class="hljs-keyword">commit</span> -m <span class="hljs-string">'Keep calm and commit'</span>
+
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="sinon"></a><a href="#sinon" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>sinon</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/sinon"><img src="https://badgen.net/npm/dt/sinon" alt="downloads per month"></a> , Standalone test spies, stubs and mocks for JavaScript.
+Works with any unit testing framework.</li>
+</ul>
+<p>The following function takes a function as its argument and returns a new function. You can call the resulting function as many times as you want, but the original function will only be called once:</p>
+<pre><code class="hljs css language-ts"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">once</span>(<span class="hljs-params">fn</span>) </span>{
+  <span class="hljs-keyword">var</span> returnValue,
+    called = <span class="hljs-literal">false</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">if</span> (!called) {
+      called = <span class="hljs-literal">true</span>;
+      returnValue = fn.apply(<span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span>);
+    }
+    <span class="hljs-keyword">return</span> returnValue;
+  };
+}
+</code></pre>
+<p><strong>Fakes</strong></p>
+<p>Testing this function can be quite elegantly achieved with a test fake:</p>
+<pre><code class="hljs css language-ts">it(<span class="hljs-string">'calls the original function'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> callback = sinon.fake();
+  <span class="hljs-keyword">var</span> proxy = once(callback);
+
+  proxy();
+
+  assert(callback.called);
+});
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="supertest"></a><a href="#supertest" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>supertest</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/supertest"><img src="https://badgen.net/npm/dt/supertest" alt="downloads per month"></a> , HTTP assertions made easy via superagent.</li>
+</ul>
+<p>HTTP 请求测试</p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> request = <span class="hljs-built_in">require</span>(<span class="hljs-string">'supertest'</span>);
+<span class="hljs-keyword">const</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">'express'</span>);
+
+<span class="hljs-keyword">const</span> app = express();
+
+app.get(<span class="hljs-string">'/user'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  res.status(<span class="hljs-number">200</span>).json({ <span class="hljs-attr">name</span>: <span class="hljs-string">'john'</span> });
+});
+
+request(app)
+  .get(<span class="hljs-string">'/user'</span>)
+  .expect(<span class="hljs-string">'Content-Type'</span>, /json/)
+  .expect(<span class="hljs-string">'Content-Length'</span>, <span class="hljs-string">'15'</span>)
+  .expect(<span class="hljs-number">200</span>)
+  .end(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, res</span>) </span>{
+    <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">throw</span> err;
+  });
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="lerna"></a><a href="#lerna" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>lerna</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/lerna"><img src="https://badgen.net/npm/dt/lerna" alt="downloads per month"></a> , A tool for managing JavaScript projects with multiple packages.</li>
+</ul>
+<p>多个包管理工具，比如一个项目多个版本的文档</p>
+<pre><code class="hljs"><span class="hljs-comment">// lerna.json</span>
+{
+  <span class="hljs-attr">"lerna"</span>: <span class="hljs-string">"2.4.0"</span>,
+  <span class="hljs-attr">"packages"</span>: [
+    <span class="hljs-string">"packages/*"</span>
+  ],
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"6.8.2"</span>
+}
+
+
+</code></pre>
+<pre><code class="hljs css language-json">{
+  <span class="hljs-attr">"version"</span>: <span class="hljs-string">"1.1.3"</span>,
+  <span class="hljs-attr">"npmClient"</span>: <span class="hljs-string">"npm"</span>,
+  <span class="hljs-attr">"command"</span>: {
+    <span class="hljs-attr">"publish"</span>: {
+      <span class="hljs-attr">"ignoreChanges"</span>: [<span class="hljs-string">"ignored-file"</span>, <span class="hljs-string">"*.md"</span>],
+      <span class="hljs-attr">"message"</span>: <span class="hljs-string">"chore(release): publish"</span>
+    },
+    <span class="hljs-attr">"bootstrap"</span>: {
+      <span class="hljs-attr">"ignore"</span>: <span class="hljs-string">"component-*"</span>,
+      <span class="hljs-attr">"npmClientArgs"</span>: [<span class="hljs-string">"--no-package-lock"</span>]
+    }
+  },
+  <span class="hljs-attr">"packages"</span>: [<span class="hljs-string">"packages/*"</span>]
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="rimraf"></a><a href="#rimraf" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>rimraf</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/rimraf"><img src="https://badgen.net/npm/dt/rimraf" alt="downloads per month"></a> , Install with npm install rimraf, or just drop rimraf.js somewhere.</li>
+</ul>
+<p>跨平台的 <code>rm -rf</code></p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">var</span> t = <span class="hljs-built_in">require</span>(<span class="hljs-string">'tap'</span>);
+
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">'fs'</span>);
+<span class="hljs-keyword">var</span> fill = <span class="hljs-built_in">require</span>(<span class="hljs-string">'./fill.js'</span>);
+
+t.test(<span class="hljs-string">'initial clean'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">t</span>) </span>{
+  rimraf.sync(__dirname + <span class="hljs-string">'/target'</span>);
+  t.throws(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    fs.statSync(__dirname + <span class="hljs-string">'/target'</span>);
+  });
+  t.end();
+});
+
+t.test(<span class="hljs-string">'sync removal'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">t</span>) </span>{
+  fill();
+  t.ok(fs.statSync(__dirname + <span class="hljs-string">'/target'</span>).isDirectory());
+
+  rimraf.sync(__dirname + <span class="hljs-string">'/target'</span>);
+  t.throws(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    fs.statSync(__dirname + <span class="hljs-string">'/target'</span>);
+  });
+  t.end();
+});
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="inquirer"></a><a href="#inquirer" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>inquirer</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/inquirer"><img src="https://badgen.net/npm/dt/inquirer" alt="downloads per month"></a> , A collection of common interactive command line user interfaces.</li>
+</ul>
+<p>交互是命令行工具</p>
+<pre><code class="hljs css language-ts"><span class="hljs-comment">// npm install inquirer</span>
+
+<span class="hljs-keyword">var</span> inquirer = <span class="hljs-built_in">require</span>(<span class="hljs-string">'inquirer'</span>);
+inquirer
+  .prompt([
+    <span class="hljs-comment">/* Pass your questions in here */</span>
+  ])
+  .then(<span class="hljs-function"><span class="hljs-params">answers</span> =&gt;</span> {
+    <span class="hljs-comment">// Use user feedback for... whatever!!</span>
+  });
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="conventional-changelog-cli"></a><a href="#conventional-changelog-cli" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>conventional-changelog-cli</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/conventional-changelog-cli"><img src="https://badgen.net/npm/dt/conventional-changelog-cli" alt="downloads per month"></a> , Generate a changelog from git metadata</li>
+</ul>
+<p>自动生成 <code>Changelog</code> 前提是按照 <code>angular</code> 的提交格式进行 <code>git commit</code></p>
+<pre><code class="hljs css language-bash">conventional-changelog -p angular -i ./CHANGELOG.md -k core -s
+
+<span class="hljs-comment">#  或者</span>
+
+conventional-changelog -p angular -i CHANGELOG.md -s
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="octokitrest"></a><a href="#octokitrest" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>@octokit/rest</h2>
+<ul>
+<li><a href="https://www.npmjs.com/package/@octokit/rest"><img src="https://badgen.net/npm/dt/@octokit/rest" alt="downloads per month"></a> , GitHub REST API client for JavaScript</li>
+</ul>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> Octokit = <span class="hljs-built_in">require</span>(<span class="hljs-string">'@octokit/rest'</span>);
+<span class="hljs-keyword">const</span> octokit = <span class="hljs-keyword">new</span> Octokit();
+
+<span class="hljs-comment">// Compare: https://developer.github.com/v3/repos/#list-organization-repositories</span>
+octokit.repos
+  .listForOrg({
+    <span class="hljs-attr">org</span>: <span class="hljs-string">'octokit'</span>,
+    <span class="hljs-attr">type</span>: <span class="hljs-string">'public'</span>
+  })
+  .then(<span class="hljs-function">(<span class="hljs-params">{ data }</span>) =&gt;</span> {
+    <span class="hljs-comment">// handle data</span>
+  });
+</code></pre>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2019-10-11 by 岑少任</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docusaurus-fex/docs/1.1.2/business/node-tips"><span class="arrow-prev">← </span><span>Node 记录</span></a><a class="docs-next button" href="/docusaurus-fex/docs/1.1.2/business/nodejs2"><span>Node 常用扩展模块 2</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#chokidar">chokidar</a></li><li><a href="#fs-extra">fs-extra</a></li><li><a href="#chalk">chalk</a></li><li><a href="#uuid-和-node-uuid">uuid 和 node-uuid</a></li><li><a href="#md5">md5</a></li><li><a href="#config">config</a></li><li><a href="#cross-env">cross-env</a></li><li><a href="#命令行参数解析">命令行参数解析</a><ul class="toc-headings"><li><a href="#minimist">minimist</a></li><li><a href="#yargs">yargs</a></li></ul></li><li><a href="#semver">semver</a></li><li><a href="#diff">diff</a></li><li><a href="#base64-js">base64-js</a></li><li><a href="#bytes">bytes</a></li><li><a href="#husky">husky</a></li><li><a href="#sinon">sinon</a></li><li><a href="#supertest">supertest</a></li><li><a href="#lerna">lerna</a></li><li><a href="#rimraf">rimraf</a></li><li><a href="#inquirer">inquirer</a></li><li><a href="#conventional-changelog-cli">conventional-changelog-cli</a></li><li><a href="#octokitrest">@octokit/rest</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/docusaurus-fex/" class="nav-home"><img src="/docusaurus-fex/img/logo.png" alt="前端技术文档库" width="48" height="48" style="max-width:initial"/></a><div><h5>Docs</h5><a href="/docusaurus-fex/docs/en/start.html">快速开始</a><a href="/docusaurus-fex/docs/en/page-guide.html">查看规范</a><a href="/docusaurus-fex/docs/en/reading-more.html">拓展阅读</a></div><div><h5>Community</h5><a href="/docusaurus-fex/en/users.html">User Showcase</a><a href="/docusaurus-fex/en/business.html">business</a></div><div><h5>More</h5><a href="/docusaurus-fex/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/docusaurus-fex/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/><section class="copyright">Copyright © 2020 友点科技</section></a></footer></div><script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script><script>
+                document.addEventListener('keyup', function(e) {
+                  if (e.target !== document.body) {
+                    return;
+                  }
+                  // keyCode for '/' (slash)
+                  if (e.keyCode === 191) {
+                    const search = document.getElementById('search_input_react');
+                    search && search.focus();
+                  }
+                });
+              </script><script>
+              var search = docsearch({
+                
+                apiKey: '3eb9507824b8be89e7a199ecaa1a9d2c',
+                indexName: 'docusaurus',
+                inputSelector: '#search_input_react',
+                algoliaOptions: {"facetFilters":["language:en","version:1.1.2"]}
+              });
+            </script></body></html>
